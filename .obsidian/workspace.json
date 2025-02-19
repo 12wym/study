@@ -21,22 +21,10 @@
               },
               "icon": "lucide-file",
               "title": "driver"
-            }
-          },
-          {
-            "id": "558c8fab3cf02bcf",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
-            }
+            },
+            "group": "f27dd9bd6959362f"
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "36e56bac7f0c3b3f",
@@ -57,7 +45,7 @@
               "icon": "lucide-file",
               "title": "driver"
             },
-            "group": "65c7ecf52747fff2"
+            "group": "f27dd9bd6959362f"
           }
         ]
       },
@@ -80,7 +68,7 @@
               "icon": "lucide-list",
               "title": "driver 的大纲"
             },
-            "group": "65c7ecf52747fff2"
+            "group": "f27dd9bd6959362f"
           }
         ]
       }
@@ -230,8 +218,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "558c8fab3cf02bcf",
+  "active": "b46ffcf058885d82",
   "lastOpenFiles": [
+    "README.md",
     "mystudy/README.md",
     "mystudy",
     "study/mystudy/欢迎.md",
