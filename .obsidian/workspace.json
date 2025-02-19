@@ -16,8 +16,7 @@
               "state": {
                 "file": "driver/driver.md",
                 "mode": "source",
-                "source": true,
-                "backlinks": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "driver"
@@ -38,9 +37,8 @@
               "type": "markdown",
               "state": {
                 "file": "driver/driver.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "driver"
@@ -218,8 +216,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b46ffcf058885d82",
+  "active": "44f0769d01a56ba8",
   "lastOpenFiles": [
+    "driver/image.png",
+    "driver/driver.md",
     "README.md",
     "mystudy/README.md",
     "mystudy",
@@ -227,7 +227,6 @@
     "study/mystudy",
     "未命名.md.baiduyun.uploading.cfg",
     "未命名.md",
-    "driver/driver.md",
     "driver/driver.md.baiduyun.uploading.cfg"
   ]
 }
