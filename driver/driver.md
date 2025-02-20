@@ -2216,6 +2216,7 @@ pinctrl系统提供的功能
 ```
 
 #### GPIO子系统
+
 ```bash
 testa:testb{
 	#address-cells = <1>;
@@ -2223,7 +2224,20 @@ testa:testb{
 
 	compatible = "test";
 	reg = <0x20ac000 0x0000004>;
-pincttl-name = "default";
-pi
+	
+	pinctrl-name = "default";
+	pinctrl-0 = <&pinctrl_test>;
+	test-gpio = <&gpio1 3 GPIO_ACTIVE_LOW>;
 }
+```
+
+##### 常用gpio子系统提供的api函数
+
+```bash
+* gpio_request
+用于申请一个GPIO管脚
+int gpio_request(unsigned gpio,const char* label)
+gpio:要申请的gpio标号
+label:
+返回值:
 ```
