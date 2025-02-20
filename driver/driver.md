@@ -2191,4 +2191,5 @@ pinctrl系统提供的功能
 * 配置这些pin的特性。例如使能或关闭引脚上的pull-up、pull-down电阻，配置引脚的driver strength。
 * 不同厂家的pin controller节点里的属性定义
 可以通过Linux源码目录/Documentation/devicetree/bindings下的txt文档查看
+* 
 ```
