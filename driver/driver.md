@@ -2241,5 +2241,10 @@ gpio:要申请的gpio标号,使用of_get_named_gpio函数从设备树获取指�
 label:给gpio设置个名字
 返回值:0,申请成功 其他值,申请失败
 * of_get_named_gpio
-此函数获取GPIO编号，因为Linux内核中关于GPIO的API函数都要使用GPIO编号，此函数将设备树中类似<&goio1 3 GPIO_ACTIVE_LOW>的属性信息转换为对应的
+此函数获取GPIO编号，因为Linux内核中关于GPIO的API函数都要使用GPIO编号，此函数将设备树中类似<&goio1 3 GPIO_ACTIVE_LOW>的属性信息转换为对应的GPIO编号
+int of_get_named_gpio(struct device_node* np,const char* propname,int index)
+np:设备节点
+propname:包含要获取GPIO信息属性名
+index:因为一个属性里面可能包含多个GPIO,此参数指定要获取哪个GPIO的编号，如果只有一个GPIO信息的话此参数为0
+返回值:成功返回得到的GPIO编号，失败返回负数
 ```
