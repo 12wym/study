@@ -2237,7 +2237,9 @@ testa:testb{
 * gpio_request
 用于申请一个GPIO管脚
 int gpio_request(unsigned gpio,const char* label)
-gpio:要申请的gpio标号
-label:
-返回值:
+gpio:要申请的gpio标号,使用of_get_named_gpio函数从设备树获取指定GPIO属性信息，此函数会返回这个GPIO的标号
+label:给gpio设置个名字
+返回值:0,申请成功 其他值,申请失败
+* of_get_named_gpio
+此函数获取GPIO编号，因为Linux内核中关于GPIO的API函数都要使用GPIO编号，此函数将设备树中类似<&goio1 3 GPIO_ACTIVE_LOW>的属性信息转换为对应的
 ```
