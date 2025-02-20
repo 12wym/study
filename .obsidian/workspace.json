@@ -6,7 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 51.31264916467781,
+        "dimension": 57.04057279236277,
         "children": [
           {
             "id": "44f0769d01a56ba8",
@@ -21,14 +21,14 @@
               "icon": "lucide-file",
               "title": "driver"
             },
-            "group": "f27dd9bd6959362f"
+            "group": "ca77124a7383d51f"
           }
         ]
       },
       {
         "id": "36e56bac7f0c3b3f",
         "type": "tabs",
-        "dimension": 28.93794749403341,
+        "dimension": 31.026252983293556,
         "children": [
           {
             "id": "b46ffcf058885d82",
@@ -43,14 +43,14 @@
               "icon": "lucide-file",
               "title": "driver"
             },
-            "group": "f27dd9bd6959362f"
+            "group": "ca77124a7383d51f"
           }
         ]
       },
       {
         "id": "14b6c93e51a61c7b",
         "type": "tabs",
-        "dimension": 19.74940334128878,
+        "dimension": 11.933174224343675,
         "children": [
           {
             "id": "315eeecb13cb88d6",
@@ -65,8 +65,7 @@
               },
               "icon": "lucide-list",
               "title": "driver 的大纲"
-            },
-            "group": "f27dd9bd6959362f"
+            }
           }
         ]
       }
