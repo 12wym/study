@@ -2193,3 +2193,4 @@ pinctrl系统提供的功能
 可以通过Linux源码目录/Documentation/devicetree/bindings下的txt文档查看
 * 
 ```
+![[Pasted image 20250220152950.png]]
