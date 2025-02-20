@@ -1,3 +1,5 @@
 {
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "textFontFamily": "Arial",
+  "accentColor": "#5c82f5"
 }
