@@ -2204,6 +2204,12 @@ pinctrl系统提供的功能
 	pinctrl-name = "default","wake up";
 	wake up为状态1
 	pinctrl-0 = <&pinctrl_hog_1>;
+	第0个状态所对应的引脚配置，也就是default状态对应的引脚在pin controller里面定义好的节点pinctrl_hog_1里面的管脚配置
 	pinctrl-1 = <&pinctrl_hog_2>;
-	
+	第1个状态所对应的引脚配置，也就是wake up状态对应的引脚在pin controller里面定义好的节点pinctrl_hog_1里面的管脚配置
+* 例三
+	pinctrl-name = "default";
+	设备的状态，可以有多个状态，default为状态0
+	pinctrl-0 = <&pinctrl_hog_1
+	             &pinctrl_hog_2>;
 ```
