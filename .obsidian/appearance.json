@@ -1,5 +1,6 @@
 {
   "theme": "obsidian",
   "textFontFamily": "Arial",
-  "accentColor": "#5c82f5"
+  "accentColor": "#5c82f5",
+  "cssTheme": "Minimal"
 }
