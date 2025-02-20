@@ -6,7 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 39.89983305509182,
+        "dimension": 46.658711217183765,
         "children": [
           {
             "id": "44f0769d01a56ba8",
@@ -28,7 +28,7 @@
       {
         "id": "36e56bac7f0c3b3f",
         "type": "tabs",
-        "dimension": 43.405676126878134,
+        "dimension": 36.63484486873509,
         "children": [
           {
             "id": "b46ffcf058885d82",
@@ -50,7 +50,7 @@
       {
         "id": "14b6c93e51a61c7b",
         "type": "tabs",
-        "dimension": 16.69449081803005,
+        "dimension": 16.706443914081145,
         "children": [
           {
             "id": "315eeecb13cb88d6",
@@ -215,7 +215,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b46ffcf058885d82",
+  "active": "44f0769d01a56ba8",
   "lastOpenFiles": [
     "driver/image-11.png",
     "Pasted image 20250220152950.png",
