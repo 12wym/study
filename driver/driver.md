@@ -2182,7 +2182,7 @@ module_exit(beep_driver_exit);
 MODULE_LICENSE("GPL");
 ```
 
-## pinctrl和gpio子系统
+### pinctrl和gpio子系统
 
 ```bash
 pinctrl系统提供的功能
@@ -2213,4 +2213,17 @@ pinctrl系统提供的功能
 	pinctrl-0 = <&pinctrl_hog_1
 	             &pinctrl_hog_2>;
 	第0个状态所对应的引脚配置，也就是default状态对应的引脚在pin controller里面定义好的节点pinctrl_hog_1和pinctrl_hog_2里面的管脚配置
+```
+
+#### GPIO子系统
+```bash
+testa:testb{
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	compatible = "test";
+	reg = <0x20ac000 0x0000004>;
+pincttl-name = "default";
+pi
+}
 ```
