@@ -267,7 +267,7 @@ extern int misc_deregister(struct miscdevice *misc);
 
 #### driver.c
 
-```bash
+```c
 
 #include <linux/init.h>
 #include <linux/module.h>
@@ -398,7 +398,7 @@ cat /proc/iomem可以查看已经被映射的物理地址
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/miscdevice.h>
@@ -495,7 +495,7 @@ MODULE_LICENSE("GPL");
 
 #### app.c
 
-```bash
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <sus/stat.h>
@@ -545,7 +545,7 @@ perm 参数读写的权限
 
 #### 驱动传参示例driver.c
 
-```bash
+```c
 static int a;
 static int b[5];
 static int cnt;
@@ -664,7 +664,7 @@ misc_deregister(&misc_dev);
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/fs.h>
@@ -771,7 +771,7 @@ void cdev_del(struct cdev *);
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/fs.h>
@@ -850,7 +850,7 @@ MODULE_LICENSE("GPL");
 
 #### app.c
 
-```bash
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <sus/stat.h>
@@ -930,7 +930,7 @@ cls即要删除的类
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/fs.h>
@@ -1064,7 +1064,7 @@ rmmod chrdev.ko
 
 #### app.c
 
-```bash
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <sus/stat.h>
@@ -1213,7 +1213,7 @@ struct resource {
 
 #### device.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -1289,7 +1289,7 @@ struct device_driver {
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -1362,7 +1362,7 @@ MODULE_LICENSE("GPL");
 
 #### device.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -1413,7 +1413,7 @@ MODULE_LICENSE("GPL");
 
 #### driver.C
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -1498,7 +1498,7 @@ MODULE_LICENSE("GPL");
 
 #### 杂项设备举例driver.c(device.ko插入状态进行验证)
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -1663,7 +1663,7 @@ MODULE_LICENSE("GPL");
 
 #### 杂项设备举例app.c
 
-```bash
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <sus/stat.h>
@@ -2007,7 +2007,7 @@ index:reg属性中要完成内存映射的段，如果reg属性只有一段的�
 
 #### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/miscdevice.h>
@@ -2081,7 +2081,7 @@ MODULE_LICENSE("GPL");
 
 ##### driver.c
 
-```bash
+```c
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
