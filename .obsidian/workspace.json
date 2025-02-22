@@ -22,8 +22,23 @@
               "title": "driver"
             },
             "group": "ca77124a7383d51f"
+          },
+          {
+            "id": "5194de23cee5e90e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note/note.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "note"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "36e56bac7f0c3b3f",
@@ -44,8 +59,23 @@
               "title": "driver"
             },
             "group": "ca77124a7383d51f"
+          },
+          {
+            "id": "0a9b8d08c47cf54c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note/note.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "note"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "14b6c93e51a61c7b",
@@ -58,13 +88,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "driver/driver.md",
+                "file": "note/note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "driver 的大纲"
+              "title": "note 的大纲"
             }
           }
         ]
@@ -215,11 +245,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "44f0769d01a56ba8",
+  "active": "0a9b8d08c47cf54c",
   "lastOpenFiles": [
+    "driver/driver.md",
+    "note/note.md",
+    "note",
     "driver/image-11.png",
     "Pasted image 20250220152950.png",
-    "driver/driver.md",
     "README.md",
     "driver/image.png",
     "mystudy/README.md",
@@ -227,7 +259,6 @@
     "study/mystudy/欢迎.md",
     "study/mystudy",
     "未命名.md.baiduyun.uploading.cfg",
-    "未命名.md",
     "driver/driver.md.baiduyun.uploading.cfg"
   ]
 }
