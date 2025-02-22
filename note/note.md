@@ -16,7 +16,7 @@
 2. **使用`->`操作符**：
     - 当你有一个**结构体指针**时，使用箭头操作符来访问结构体的成员。
     - 例子：
-        `struct Person {
+        struct Person {
         int age;
         char name[20];
         };
