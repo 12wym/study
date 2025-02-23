@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note.md",
+                "file": "driver/driver.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "driver"
             },
             "group": "07677aef9fc88e57"
           }
@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note.md",
+                "file": "driver/driver.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "driver"
             },
             "group": "07677aef9fc88e57"
           }
@@ -90,13 +90,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/note.md",
+                "file": "driver/driver.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "driver 的大纲"
             }
           }
         ]
@@ -247,10 +247,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5194de23cee5e90e",
+  "active": "aea5ffb72fea0c14",
   "lastOpenFiles": [
-    "driver/driver.md",
     "note/note.md",
+    "driver/driver.md",
     "note",
     "driver/image-11.png",
     "Pasted image 20250220152950.png",
