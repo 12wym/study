@@ -51,5 +51,10 @@ bool    1字节 8位
 * 基础使用
 ```
 ```c
-int main()
+int main(){
+	int a = 10;
+	int* p = &a;
+	printf();
+	
+}
 ```
