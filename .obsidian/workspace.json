@@ -35,7 +35,8 @@
               },
               "icon": "lucide-file",
               "title": "note"
-            }
+            },
+            "group": "07677aef9fc88e57"
           }
         ],
         "currentTab": 1
@@ -72,7 +73,8 @@
               },
               "icon": "lucide-file",
               "title": "note"
-            }
+            },
+            "group": "07677aef9fc88e57"
           }
         ],
         "currentTab": 1
@@ -245,7 +247,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0a9b8d08c47cf54c",
+  "active": "5194de23cee5e90e",
   "lastOpenFiles": [
     "driver/driver.md",
     "note/note.md",
