@@ -101,8 +101,9 @@ int main()
 	printf("val:%d\n",*ptr);//输出30
 
 	free(ptr);//释放ptr指向的内存
-	ptr = NULL;//
+	ptr = NULL;//重置指针变量,避免野指针
 
 	return 0;
 }
+/**/
 ```
