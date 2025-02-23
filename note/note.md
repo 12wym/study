@@ -114,12 +114,24 @@ ptr是指针变量,始终持有该地址(直到被修改或释放)*/
 int main()
 {
 	char c = 'A';
-	int* p_int = (int*)&c;//
+	int* p_int = (int*)&c;//强制类型转换(危险操作)
 
-	printf("char的地址(指针):%p\n",(void*)&c);//
-	printf("p_int存储的地址值:%p\n",(void*)p_int);//
+	printf("char的地址(指针):%p\n",(void*)&c);//地址值
+	printf("p_int存储的地址值:%p\n",(void*)p_int);//同上
 
-	//
-	printf("解引用p_int的值:%p\n",(void*)p_int);//
+	//*p_int解引用时按int类型解析(可能越界访问)
+	printf("解引用p_int的值(错误操作):%d\n",*p_int);
+	//结果不可预测
+
+	return 0;
 }
+
+/*同一个指针(如&c的地址)可以被不同指针变量存储(例如char* int*),但类型决定了操作方式
+类型错误的指针变量解引用可能导致逻辑错误或崩溃*/
+```
+
+```bash
+总结：
+指针(地址值):像街道地址(如北京市海淀区xx路1号),时数据的物理位置标注
+指针变量:xian
 ```
