@@ -111,5 +111,15 @@ ptr是指针变量,始终持有该地址(直到被修改或释放)*/
 
 ```c
 //指针变量的类型与操作
+int main()
+{
+	char c = 'A';
+	int* p_int = (int*)&c;//
 
+	printf("char的地址(指针):%p\n",(void*)&c);//
+	printf("p_int存储的地址值:%p\n",(void*)p_int);//
+
+	//
+	printf("解引用p_int的值:%p\n",(void*)p_int);//
+}
 ```
