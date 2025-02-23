@@ -54,7 +54,7 @@ bool    1字节 8位
 int main(){
 	int a = 10;
 	int* p = &a;
-	printf();
+	printf("a 的地址(指针): %p\n",(void*)&a);//输出类似0x7ffeea3b9a4c
 	
 }
 ```
