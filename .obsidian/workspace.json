@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "driver/driver.md",
+                "file": "note/note.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "driver"
+              "title": "note"
             },
             "group": "ca77124a7383d51f"
           }
@@ -36,31 +36,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "driver/driver.md",
+                "file": "note/note.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "driver"
+              "title": "note"
             },
             "group": "ca77124a7383d51f"
-          },
-          {
-            "id": "0a9b8d08c47cf54c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "driver/driver.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "driver"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "14b6c93e51a61c7b",
@@ -73,13 +58,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "driver/driver.md",
+                "file": "note/note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "driver 的大纲"
+              "title": "note 的大纲"
             }
           }
         ]
@@ -232,8 +217,8 @@
   },
   "active": "44f0769d01a56ba8",
   "lastOpenFiles": [
-    "note/note.md",
     "driver/driver.md",
+    "note/note.md",
     "note",
     "driver/image-11.png",
     "Pasted image 20250220152950.png",
