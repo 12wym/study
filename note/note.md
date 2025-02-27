@@ -168,3 +168,26 @@ Device     Start        End    Sectors   Size Type
 - 查看磁盘的详细分区结构，包括每个分区的起始和结束扇区、大小、类型等。
 - 适用于磁盘管理、分区操作（例如，删除、添加分区），以及了解硬盘的底层分区信息。
 ```
+
+## 指针变量传值
+
+```c
+void GetClockBeingStatus(int fd, unsigned int *status)
+{
+    *status = ReadFpgaReg(fd,TMSYNC_MANIPULATE_OFFSET + GET_LOCAL_CLOCK_STATUS_ADDR_OFFSET);
+    //这里需要传入指针变量类型参数，同时在函数内对该地址赋值
+    /*如果只使用
+    void GetClockBeingStatus(int fd, unsigned int status)
+    {
+	    status = ReadFpgaReg(fd,TMSYNC_MANIPULATE_OFFSET + GET_LOCAL_CLOCK_STATUS_ADDR_OFFSET);
+	    return;
+    }
+    status变量的值是局部变量无法传出
+    */
+    return;
+}
+
+//主函数调用
+GetClockBeingStatus(fd, &status);//传入外部变量的地址
+printf("status = %d\n", status);
+```
