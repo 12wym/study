@@ -22,24 +22,8 @@
               "title": "driver"
             },
             "group": "ca77124a7383d51f"
-          },
-          {
-            "id": "5194de23cee5e90e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "driver/driver.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "driver"
-            },
-            "group": "07677aef9fc88e57"
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "36e56bac7f0c3b3f",
@@ -53,7 +37,7 @@
               "type": "markdown",
               "state": {
                 "file": "driver/driver.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
@@ -73,8 +57,7 @@
               },
               "icon": "lucide-file",
               "title": "driver"
-            },
-            "group": "07677aef9fc88e57"
+            }
           }
         ],
         "currentTab": 1
@@ -247,7 +230,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aea5ffb72fea0c14",
+  "active": "44f0769d01a56ba8",
   "lastOpenFiles": [
     "note/note.md",
     "driver/driver.md",
