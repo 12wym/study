@@ -38,10 +38,10 @@ R15 PC 程序计数器
 局部变量
 */
 int g_a = 123;
-
+/*执行该函数的时候会在栈里临时给变量分配空间，执行完后回收之前分配的空间*/
 int add(volatile int v)
 {
-	volatile int a = 321;
+	volatile int a = 321;//在栈里
 	v = v + a;
 	return v;
 }
@@ -53,3 +53,4 @@ int main()
 	b = add(s_a);
 }
 ```
+![[Pasted image 20250301215443.png]]
