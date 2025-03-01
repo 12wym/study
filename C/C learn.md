@@ -98,7 +98,8 @@ sp + 0x64
 ```
 
 ## 局部变量的释放
-
+![[Pasted image 20250301225542.png]]
 ```bash
-
+push lr,r0 分别指向0x2000FF90，0x2000FF8C
+SUB 将sp指向
 ```
