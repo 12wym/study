@@ -6,7 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 46.658711217183765,
+        "dimension": 73.63465160075329,
         "children": [
           {
             "id": "44f0769d01a56ba8",
@@ -20,37 +20,29 @@
               },
               "icon": "lucide-file",
               "title": "note"
-            },
-            "group": "ca77124a7383d51f"
-          }
-        ]
-      },
-      {
-        "id": "36e56bac7f0c3b3f",
-        "type": "tabs",
-        "dimension": 36.63484486873509,
-        "children": [
+            }
+          },
           {
-            "id": "b46ffcf058885d82",
+            "id": "722bf679e3a382ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note.md",
+                "file": "C语言学习.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
-            },
-            "group": "ca77124a7383d51f"
+              "title": "C语言学习"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "14b6c93e51a61c7b",
         "type": "tabs",
-        "dimension": 16.706443914081145,
+        "dimension": 26.365348399246702,
         "children": [
           {
             "id": "315eeecb13cb88d6",
@@ -58,13 +50,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/note.md",
+                "file": "C语言学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "C语言学习 的大纲"
             }
           }
         ]
@@ -217,9 +209,12 @@
   },
   "active": "aea5ffb72fea0c14",
   "lastOpenFiles": [
-    "未命名",
-    "driver/driver.md",
     "note/note.md",
+    "C语言学习.md",
+    "C/note.md.md",
+    "未命名",
+    "C",
+    "driver/driver.md",
     "note",
     "driver/image-11.png",
     "Pasted image 20250220152950.png",
