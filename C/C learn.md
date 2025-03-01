@@ -19,4 +19,11 @@ FLASH: a++
 2. ADD R0,#1
 3. STR R0,[addra]
 */
+
+R0,...,R11 普通寄存器
+R12
+R13
+R14
+R15 PC
 ```
+![[Pasted image 20250301213330.png]]
