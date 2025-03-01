@@ -25,9 +25,9 @@ R0,...,R11 普通寄存器
 R12
 R13 SP 栈
 R14 LR 返回地址
-R15 PC 程序计数器
+R15 PC 程序计数器 跳转执行
 
-BL指令 Branch And Link 跳转执行，但执行前先记录当前地址
+BL指令 Branch And Link 跳转执行，但执行前先记录返回地址
 LR = addrb
 PC = main地址
 ```
@@ -65,6 +65,11 @@ f103的内存基地址为0x20000000，结束地址0x20010000
 
 ## 栈 使用图
 ![[Pasted image 20250301221737.png]]
+跳转前先记录返回地址addrb，PC跳转去执行mymain地址
+![[Pasted image 20250301222405.png]]
+马上保存LR，因为即将调用C函数add
+在add中也是保存地址addrc，PC跳转去执行add的地址
+为了避免覆盖a'd
 
 ## 局部变量的初始化
 ![[Pasted image 20250301221918.png]]
