@@ -100,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 476.5
+    "width": 246.5
   },
   "right": {
     "id": "57ccba91c104d57c",
@@ -164,21 +164,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "driver/driver.md",
+                "file": "C/C learn.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "driver 的大纲"
+              "title": "C learn 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,8 +191,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aea5ffb72fea0c14",
+  "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
+    "Pasted image 20250301224608.png",
     "C/Pasted image 20250301223742.png",
     "C/Pasted image 20250301223500.png",
     "C/Pasted image 20250301222405.png",
