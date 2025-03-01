@@ -71,6 +71,8 @@ f103的内存基地址为0x20000000，结束地址0x20010000
 
 ## 栈 使用图
 ![[Pasted image 20250301221737.png]]
+```bash
+```
 跳转前先记录返回地址addrb，PC跳转去执行mymain地址
 ![[Pasted image 20250301222405.png]]
 push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b分配空间
@@ -85,3 +87,11 @@ push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b
 ```
 ### 加入char name后
 ![[Pasted image 20250301223742.png]]
+```bash
+0x2000FF94 = 0x2000FFFC - 104
+其中变量b的地址
+sp + 0x64
+= 0x2000FF94 + 0x64
+= 0x2000FFF8
+```
+
