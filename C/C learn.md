@@ -53,8 +53,13 @@ int add(volatile int v)
 int main()
 {
 	static volatile int s_a = 1;
+	
 	volatile int b = 456;
+	
 	volatile char name[100];
+	
+	name[0] = 'A';
+	
 	b = add(s_a);
 }
 ```
@@ -78,3 +83,5 @@ push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b
 将0x1C8移入到寄存器R0
 并将R0的值存入sp+0x00(0x2000FFF8)指向的地址中
 ```
+### 加入char name后
+![[Pasted image 20250301223742.png]]
