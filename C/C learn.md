@@ -101,5 +101,13 @@ sp + 0x64
 ![[Pasted image 20250301225542.png]]
 ```bash
 push lr,r0 分别指向0x2000FF90，0x2000FF8C
-SUB 将sp指向
+SUB 将sp指向0x2000FF88
+给R0赋值321
+将R0的值321保存到sp+0的地址下
+
+读两个数据 R0 = sp + 0 = a = 321
+R1 = sp + 4 = v
+
+R0 = R0 + R1 = 321 + v
+
 ```
