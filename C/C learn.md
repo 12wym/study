@@ -53,7 +53,7 @@ int add(volatile int v)
 int main()
 {
 	static volatile int s_a = 1;
-	volatile int b = ;
+	volatile int b = 456;
 	b = add(s_a);
 }
 ```
@@ -65,3 +65,10 @@ f103的内存基地址为0x20000000，结束地址0x20010000
 
 ## 栈 使用图
 ![[Pasted image 20250301221737.png]]
+
+## 局部变量的初始化
+![[Pasted image 20250301221918.png]]
+```bash
+将0x1C8移入到寄存器R0
+并将R0的值存入sp+0x00指向的地址中
+```
