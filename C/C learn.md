@@ -32,5 +32,17 @@ R15 PC 程序计数器
 ## 变量是什么
 
 ```c
+/*
+全局变量
+局部静态变量
+局部变量
+*/
+int g_a = 123;
 
+int add(volatile int v)
+{
+	volatile int a = 321;
+	v = v + a;
+	
+}
 ```
