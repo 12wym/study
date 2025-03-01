@@ -43,6 +43,13 @@ int add(volatile int v)
 {
 	volatile int a = 321;
 	v = v + a;
-	
+	return v;
+}
+
+int main()
+{
+	static volatile int s_a = 1;
+	volatile int b;
+	b = add(s_a);
 }
 ```
