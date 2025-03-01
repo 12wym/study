@@ -26,6 +26,10 @@ R12
 R13 SP 栈
 R14 LR 返回地址
 R15 PC 程序计数器
+
+BL指令 Branch And Link 跳转执行，但执行前先记录当前地址
+LR = addrb
+PC = main地址
 ```
 ![[Pasted image 20250301213330.png]]
 
