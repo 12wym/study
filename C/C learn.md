@@ -54,6 +54,7 @@ int main()
 {
 	static volatile int s_a = 1;
 	volatile int b = 456;
+	volatile char name[100];
 	b = add(s_a);
 }
 ```
@@ -67,13 +68,13 @@ f103的内存基地址为0x20000000，结束地址0x20010000
 ![[Pasted image 20250301221737.png]]
 跳转前先记录返回地址addrb，PC跳转去执行mymain地址
 ![[Pasted image 20250301222405.png]]
-马上保存LR，因为即将调用C函数add
+push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b分配空间
 在add中也是保存地址addrc，PC跳转去执行add的地址
-为了避免覆盖a'd
+为了避免覆盖addrb，将addrb保存到0x2000FFFC = 0x20010000 - 4
 
 ## 局部变量的初始化
 ![[Pasted image 20250301221918.png]]
 ```bash
 将0x1C8移入到寄存器R0
-并将R0的值存入sp+0x00指向的地址中
+并将R0的值存入sp+0x00(0x2000FFF8)指向的地址中
 ```
