@@ -174,4 +174,16 @@ sub sp,sp,#100
 下面写内存两次，上面写内存一次，更高效
 ```
 
-## 
+## malloc函数实现
+
+```c
+volatile char mybuf[20*1024];
+volatile int index = 0;
+void *malloc(int size)
+{
+	char* ret = &mybuf[index];
+	index += size;
+	return ret;
+}
+```
+![[Pasted image 20250302200322.png]]
