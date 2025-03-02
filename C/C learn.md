@@ -185,5 +185,14 @@ void *malloc(int size)
 	index += size;
 	return ret;
 }
+
+int main()
+{
+	volatile int* p;
+	p = 0x20001000;
+	*p = 1234;
+	p = malloc(100);
+	p[0] = 0x12345
+}
 ```
 ![[Pasted image 20250302200322.png]]
