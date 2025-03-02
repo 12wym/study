@@ -147,7 +147,13 @@ PC <= lr
 ## 堆、栈
 
 ```bash
+栈
 默认向下增长
 估计栈大小:寻找使用局部变量最多的调用链关系
 选出空闲空间
+堆
+char* str;
+str = malloc(100);
+strcpy(str,"hhhhh");
+free(str);
 ```
