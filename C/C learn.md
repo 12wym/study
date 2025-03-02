@@ -159,3 +159,16 @@ strcpy(str,"hhhhh");
 free(str);
 ```
 ![[Pasted image 20250302165602.png]]
+```
+int b;
+char name[100];
+
+true:
+push {lr}
+sub sp,sp,#104
+
+false:
+push {r3,lr}
+sub sp,sp,#100
+下面写内存两次，上面写内存一次，更高效
+```
