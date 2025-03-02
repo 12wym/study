@@ -124,6 +124,8 @@ PC <= lr
 ![[Pasted image 20250302135026.png]]
 ```bash
 如果像局部变量一样初始化，浪费指令和flash空间
+
+将初始化值放在flash的data段，并通过一个copy函数，一次性复制到内存中
 ```
 ![[Pasted image 20250302140812.png]]
 ```bash
