@@ -35,7 +35,7 @@
               "type": "markdown",
               "state": {
                 "file": "C/C learn.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -191,8 +191,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5f1eeb2375facf15",
+  "active": "aea5ffb72fea0c14",
   "lastOpenFiles": [
+    "C/Pasted image 20250302142608.png",
+    "C/Pasted image 20250302142528.png",
     "C/Pasted image 20250302141047.png",
     "C/Pasted image 20250302140812.png",
     "C/C learn.md",
@@ -203,7 +205,6 @@
     "C/Pasted image 20250301223500.png",
     "C/Pasted image 20250301222405.png",
     "C/Pasted image 20250301221918.png",
-    "C/Pasted image 20250301215443.png",
     "note/note.md",
     "note/img.md",
     "C/note.md.md",
