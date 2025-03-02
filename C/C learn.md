@@ -26,6 +26,7 @@ R12
 R13 SP 栈
 R14 LR 返回地址
 R15 PC 程序计数器 跳转执行
+地址越低，Rx寄存器后面的数字越小
 
 BL指令 Branch And Link 跳转执行，但执行前先记录返回地址
 LR = addrb
