@@ -11,14 +11,12 @@
             "id": "5f1eeb2375facf15",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "C/C learn.md",
-                "mode": "source",
-                "source": true
+                "file": "C/Pasted image 20250302141047.png"
               },
-              "icon": "lucide-file",
-              "title": "C learn"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250302141047"
             },
             "group": "f2827017ecec52a5"
           }
@@ -32,14 +30,12 @@
             "id": "989974176bd33b30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "C/C learn.md",
-                "mode": "preview",
-                "source": true
+                "file": "C/Pasted image 20250302141047.png"
               },
-              "icon": "lucide-file",
-              "title": "C learn"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250302141047"
             },
             "group": "f2827017ecec52a5"
           }
@@ -100,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 312.5
   },
   "right": {
     "id": "57ccba91c104d57c",
@@ -116,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C/C learn.md",
+                "file": "C/Pasted image 20250302141047.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "C learn 的反向链接列表"
+              "title": "Pasted image 20250302141047 的反向链接列表"
             }
           },
           {
@@ -164,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C/C learn.md",
+                "file": "C/Pasted image 20250302141047.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C learn 的大纲"
+              "title": "Pasted image 20250302141047 的大纲"
             }
           }
         ],
@@ -193,6 +189,8 @@
   },
   "active": "aea5ffb72fea0c14",
   "lastOpenFiles": [
+    "C/C learn.md",
+    "C/Pasted image 20250302141047.png",
     "C/Pasted image 20250302140812.png",
     "C/Pasted image 20250302135026.png",
     "C/Pasted image 20250301225542.png",
@@ -202,11 +200,8 @@
     "C/Pasted image 20250301222405.png",
     "C/Pasted image 20250301221918.png",
     "C/Pasted image 20250301215443.png",
-    "C/Pasted image 20250301221737.png",
-    "C/C learn.md",
     "note/note.md",
     "note/img.md",
-    "C/Pasted image 20250301213330.png",
     "C/note.md.md",
     "未命名",
     "C",
