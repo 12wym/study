@@ -191,8 +191,10 @@ int main()
 	volatile int* p;
 	p = 0x20001000;
 	*p = 1234;
+	
 	p = malloc(100);
-	p[0] = 0x12345
+	p[0] = 0x12345678;
+	return 0;
 }
 ```
 ![[Pasted image 20250302200322.png]]
