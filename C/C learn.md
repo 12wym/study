@@ -218,7 +218,7 @@ int add_val(int v)
 	return a;
 }
 
-void copy_add_val_to_ram(void)
+void copy_add_val_to_ram(void)//将代码复制到了内存当中执行
 {
 	unsigned char* src;
 	unsigned int val = (unsigned int)add_val;
@@ -249,7 +249,7 @@ int main()
 ```bash
 对于copy_add_val_to_ram函数，将0x0800000c的十六字节复制到0x20008000
 
-如要模拟调试，需要修改这部分
+如要模拟调试，需要修改这部分(但依旧出现错误)主播暂未解决
 否则出现error
 ```
 ![[Pasted image 20250303194054.png]]
