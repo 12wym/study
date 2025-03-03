@@ -236,9 +236,9 @@ int main()
 	
 	a = add_val(a);
 	
-	copy_add_val_to_ram(void);
+	copy_add_val_to_ram();
 
-	f = (int (*)(int v))0x20008000;
+	f = (int (*)(int v))0x20008001;
 	a = f(a);
 	return 0;
 }
