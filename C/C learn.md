@@ -49,14 +49,14 @@ FLASH: a++
 |ROR R0, R1, #2|R0 = R1 循环右移 2 位|
 
 控制转移指令
-|`B label`|无条件跳转到 `label`|
-|`BL label`|调用子程序，跳转到 `label` 并保存返回地址|
-|`BX LR`|返回到调用函数处（常用于子程序返回）|
-|`CMP R0, R1`|比较 R0 和 R1|
-|`BEQ label|如果相等，则跳转到 `label`|
-|`BNE label|如果不相等，则跳转到 `label`|
-|`BGT label|如果大于，则跳转到 `label`|
-|`BLT label|如果小于，则跳转到 `label`|
+|B label|无条件跳转到 `label`|
+|BL label|调用子程序，跳转到 `label` 并保存返回地址|
+|BX LR|返回到调用函数处（常用于子程序返回）|
+|CMP R0, R1|比较 R0 和 R1|
+|BEQ label|如果相等，则跳转到 `label`|
+|BNE label|如果不相等，则跳转到 `label`|
+|BGT label|如果大于，则跳转到 `label`|
+|BLT label|如果小于，则跳转到 `label`|
 
 栈操作指令
 |PUSH {R0, R1}|将 R0 和 R1 压入栈|
