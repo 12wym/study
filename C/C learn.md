@@ -20,6 +20,50 @@ FLASH: a++
 2. ADD R0,#1
 3. STR R0,[addra]
 
+数据传输指令
+|MOV R0, R1|将寄存器 R1 的值复制到 R0|
+|LDR R0, [R1]|从地址 R1 加载数据到 R0|
+|STR R0, [R1]|将 R0 的数据存入地址 R1|
+|PUSH R0|将 R0 压入栈|
+|POP R0|从栈弹出数据到 R0|
+
+算数运算指令
+|ADD R0, R1, R2|R0 = R1 + R2|
+|SUB R0, R1, R2|R0 = R1 - R2|
+|MUL R0, R1, R2|R0 = R1 * R2|
+|DIV R0, R1, R2|R0 = R1 / R2（部分架构支持）|
+|ADC R0, R1, R2|带进位加法|
+|SBC R0, R1, R2|带借位减法|
+
+逻辑运算指令
+|AND R0, R1, R2|R0 = R1 & R2（按位与）|
+|ORR R0, R1, R2|R0 = R1 \| R2（按位或）|
+|EOR R0, R1, R2|R0 = R1 ⊕ R2（按位异或）|
+|BIC R0, R1, R2|R0 = R1 & (~R2)（按位清除）|
+|MVN R0, R1|R0 = ~R1（按位取反）|
+
+移位与旋转指令
+|LSL R0, R1, #2|R0 = R1 << 2（逻辑左移 2 位）|
+|LSR R0, R1, #2|R0 = R1 >> 2（逻辑右移 2 位）|
+|ASR R0, R1, #2|R0 = R1 算术右移 2 位|
+|ROR R0, R1, #2|R0 = R1 循环右移 2 位|
+
+控制转移指令
+|`B label`|无条件跳转到 `label`|
+|`BL label`|调用子程序，跳转到 `label` 并保存返回地址|
+|`BX LR`|返回到调用函数处（常用于子程序返回）|
+|`CMP R0, R1`|比较 R0 和 R1|
+|`BEQ label|如果相等，则跳转到 `label`|
+|`BNE label|如果不相等，则跳转到 `label`|
+|`BGT label|如果大于，则跳转到 `label`|
+|`BLT label|如果小于，则跳转到 `label`|
+
+栈操作指令
+|PUSH {R0, R1}|将 R0 和 R1 压入栈|
+|POP {R0, R1}|从栈中弹出数据到 R0 和 R1|
+|STMFD SP!, {R0-R3}|递减堆栈指针并存储 R0-R3（入栈）|
+|LDMFD SP!, {R0-R3}|从栈中恢复 R0-R3 并递增堆栈指针（出栈）|
+
 Code：即代码域，它通常是指编译器生成的机器指令，这些内容会被存储到ROM区。
 
 RO-data：Read Only data，即只读数据域，它指程序中用到的只读数据，这些数据被存储在ROM区，因而程序不能被修改的内容。例如C语言中const关键字定义的变量就是典型的RO-data。
