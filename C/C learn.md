@@ -327,5 +327,7 @@ int main()
 ```
 
 ![[Pasted image 20250303224951.png]]
-
+```bash
+对于结构体内部地址分配
+```
 ![[Pasted image 20250303225941.png]]
