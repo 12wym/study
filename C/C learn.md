@@ -311,7 +311,7 @@ int sex[10];
 struct student{
 	int age;
 	char sex; 
-	int score;
+	int score;//addr是4字节对齐
 };
 
 volatile struct student students[10];
@@ -320,9 +320,11 @@ int main()
 {
 	students[0].age = 10;
 	students[0].sex = 1;
+	students[0].score = 100;
 
 	return 0;
 }
 ```
 
 ![[Pasted image 20250303224951.png]]
+
