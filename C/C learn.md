@@ -280,11 +280,16 @@ struct dog{
 
 int main()
 {
+	volatile int a = 1;
 	int *p;
 	struct dog wangcai = {1,1};
 	struct dog clone;
 	struct dog *pd;
+
+	p = &a;//首地址
+	*p = 2;//4字节
 	
-	pd = &wangcai;
+	pd = &clone;//首地址
+	*pd = wangcai;//8字节
 }
 ```
