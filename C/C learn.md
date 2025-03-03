@@ -246,3 +246,7 @@ int main()
 	return 0;
 }
 ```
+```bash
+对于copy_add_val_to_ram函数，将0x0800000c的十六字节复制到0x20008000
+```
+![[Pasted image 20250303194054.png]]
