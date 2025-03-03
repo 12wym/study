@@ -308,11 +308,21 @@ int main()
 int ages[10];
 int sex[10];
 
-volatile struct student{
+struct student{
 	int age;
 	char sex; 
 	int score;
 };
 
-struct student student[10];
+volatile struct student students[10];
+
+int main()
+{
+	students[0].age = 10;
+	students[0].sex = 1;
+
+	return 0;
+}
 ```
+
+![[Pasted image 20250303224951.png]]
