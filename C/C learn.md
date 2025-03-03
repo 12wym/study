@@ -293,3 +293,5 @@ int main()
 	*pd = wangcai;//8字节
 }
 ```
+![[Pasted image 20250303211307.png]]
+![[Pasted image 20250303211513.png]]
