@@ -221,13 +221,25 @@ int add_val(int v)
 void copy_add_val_to_ram(void)
 {
 	unsigned char* src = (unsigned int*)add_val;
-	unsigned char* dest = 
+	unsigned char* dest = (unsigned int*)0x20008000;
+	
+	int i;
+	for(i = 0;i < 16;i++)
+	{
+		dest[i] = src[i];
+	}
 }
 int main()
 {
 	volatile int a = 1;
+	int (*f)(int v);
+	
 	a = add_val(a);
+	
 	copy_add_val_to_ram(void);
+
+	f = (int (*)(int v))0x20008000;
+	a = f(a);
 	return 0;
 }
 ```
