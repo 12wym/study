@@ -220,10 +220,13 @@ int add_val(int v)
 
 void copy_add_val_to_ram(void)
 {
-	unsigned char* src = (unsigned int*)add_val;
-	unsigned char* dest = (unsigned int*)0x20008000;
+	unsigned char* src;
+	unsigned int val = (unsigned int)add_val;
+	unsigned char* dest = (unsigned char*)0x20008000;
 	
 	int i;
+	src = (unsigned char*)(val & ~1);//地址最后一位为1，表示Thumb指令
+	
 	for(i = 0;i < 16;i++)
 	{
 		dest[i] = src[i];
