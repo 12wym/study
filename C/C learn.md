@@ -218,10 +218,16 @@ int add_val(int v)
 	return a;
 }
 
+void copy_add_val_to_ram(void)
+{
+	unsigned char* src = (unsigned int*)add_val;
+	unsigned char* dest = 
+}
 int main()
 {
 	volatile int a = 1;
 	a = add_val(a);
-	
+	copy_add_val_to_ram(void);
+	return 0;
 }
 ```
