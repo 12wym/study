@@ -209,4 +209,7 @@ int main()
 ![[Pasted image 20250302200322.png]]
 
 ## 函数
-![[Pasted image 20250303114949.png]]
+![[Pasted image 20250303115112.png]]
+```bash
+
+```
