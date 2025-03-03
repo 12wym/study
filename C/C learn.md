@@ -210,6 +210,18 @@ int main()
 
 ## 函数
 ![[Pasted image 20250303115112.png]]
-```bash
+```c
+int add_val(int v)
+{
+	volatile int a = v;
+	a++;
+	return a;
+}
 
+int main()
+{
+	volatile int a = 1;
+	a = add_val(a);
+	
+}
 ```
