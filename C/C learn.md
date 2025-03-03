@@ -301,3 +301,18 @@ int main()
 ```
 ![[Pasted image 20250303211307.png]]
 ![[Pasted image 20250303211513.png]]
+
+## 结构体
+
+```c
+int ages[10];
+int sex[10];
+
+volatile struct student{
+	int age;
+	char sex; 
+	int score;
+};
+
+struct student student[10];
+```
