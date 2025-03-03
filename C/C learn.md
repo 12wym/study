@@ -218,7 +218,7 @@ int add_val(int v)
 	return a;
 }
 
-void copy_add_val_to_ram(void)//将代码复制到了内存当中执行
+void copy_add_val_to_ram(void)//将代码(上图机器码)复制到了内存当中执行
 {
 	unsigned char* src;
 	unsigned int val = (unsigned int)add_val;
