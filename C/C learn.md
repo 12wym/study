@@ -271,3 +271,20 @@ int main()
 指针变量，存放的是首地址
 使用指针的本质，跟变量的访问做对比
 ```
+
+```c
+struct dog{
+	int age;
+	int sex;
+};
+
+int main()
+{
+	int *p;
+	struct dog wangcai = {1,1};
+	struct dog clone;
+	struct dog *pd;
+	
+	pd = &wangcai;
+}
+```
