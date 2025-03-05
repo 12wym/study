@@ -428,3 +428,7 @@ int main()
 	return 0;
 }
 ```
+![[Pasted image 20250305162713.png]]
+```bash
+先读取sp指向的地址存的值，清除第一位，加一
+```
