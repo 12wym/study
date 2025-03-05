@@ -374,3 +374,23 @@ int main()
 对于结构体内部地址分配
 ```
 ![[Pasted image 20250303225941.png]]
+
+## 联合体
+
+```c
+struct student{
+	int age;
+	union{
+		int kg;
+		int liang;
+	}weight;
+};
+
+int main()
+{
+	volatile struct dog wangcai;
+	wangcai.age = 1;
+	wangcai.weight.kg = 1;
+	wangcai.weight.liang = 30;
+}
+```
