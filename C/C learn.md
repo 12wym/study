@@ -114,6 +114,8 @@ int main()
 	name[0] = 'A';
 	
 	b = add(s_a);
+
+	return 0;
 }
 ```
 ![[Pasted image 20250301215443.png]]
@@ -246,6 +248,7 @@ int main()
 	
 	p = malloc(100);
 	p[0] = 0x12345678;
+	
 	return 0;
 }
 ```
@@ -286,6 +289,7 @@ int main()
 
 	f = (int (*)(int v))0x20008001;
 	a = f(a);
+	
 	return 0;
 }
 ```
@@ -340,6 +344,8 @@ int main()
 	
 	pd = &clone;//首地址
 	*pd = wangcai;//8字节
+
+	return 0;
 }
 ```
 ![[Pasted image 20250303211307.png]]
@@ -392,6 +398,33 @@ int main()
 	wangcai.age = 1;
 	wangcai.weight.kg = 1;
 	wangcai.weight.liang = 30;
+
+	return 0;
 }
 ```
 ![[Pasted image 20250305161646.png]]
+![[Pasted image 20250305161735.png]]
+![[Pasted image 20250305161810.png]]
+```bash
+修改联合体内部变量数据类型，可以看到联合体内部变量首地址相同，但大小不同
+```
+
+## 位域
+
+```c
+struct cat{
+	int sex:1;
+	int old:1;
+	int age;
+};
+
+int main()
+{
+	volatile struct cat abc;
+	abc.sex = 1;
+	abc.old = 0;
+	abc.age = 1;
+
+	return 0;
+}
+```
