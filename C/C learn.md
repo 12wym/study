@@ -427,6 +427,13 @@ int main()
 
 	return 0;
 }
+
+struct test{
+	short age;
+	int sex;
+	char weight;
+	double height;
+};
 ```
 ![[Pasted image 20250305162713.png]]
 ```bash
