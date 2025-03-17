@@ -197,3 +197,17 @@ void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,
 调用使用GetClockBeingStatus(fd, &status);和GetClockBeingStatus(fd, status);
 又有什么区别
 ```
+```bash
+传递解读
+```
+![[Pasted image 20250317161707.png]]
+![[Pasted image 20250317161725.png]]
+![[Pasted image 20250317161755.png]]
+```bash
+数组变量传递
+```
+![[Pasted image 20250317162102.png]]
+![[Pasted image 20250317162146.png]]
+![[Pasted image 20250317162206.png]]
+![[Pasted image 20250317162305.png]]
+![[Pasted image 20250317162324.png]]
