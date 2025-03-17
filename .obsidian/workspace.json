@@ -6,6 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
+        "dimension": 14.66275659824047,
         "children": [
           {
             "id": "5f1eeb2375facf15",
@@ -13,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/C learn.md",
+                "file": "note/note.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "C learn"
+              "title": "note"
             },
             "group": "f2827017ecec52a5"
           }
@@ -27,6 +28,7 @@
       {
         "id": "88d46c0c41e88bdf",
         "type": "tabs",
+        "dimension": 85.33724340175954,
         "children": [
           {
             "id": "989974176bd33b30",
@@ -34,12 +36,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/C learn.md",
+                "file": "note/note.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "C learn"
+              "title": "note"
             },
             "group": "f2827017ecec52a5"
           }
@@ -164,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C/C learn.md",
+                "file": "note/note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C learn 的大纲"
+              "title": "note 的大纲"
             }
           }
         ],
@@ -193,8 +195,8 @@
   },
   "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
-    "driver/driver.md",
     "C/C learn.md",
+    "driver/driver.md",
     "C/Pasted image 20250305162713.png",
     "C/Pasted image 20250305161810.png",
     "C/Pasted image 20250305161735.png",

@@ -190,4 +190,10 @@ void GetClockBeingStatus(int fd, unsigned int *status)
 //主函数调用
 GetClockBeingStatus(fd, &status);//传入外部变量的地址
 printf("status = %d\n", status);
+
+void GetClockBeingStatus(int fd, unsigned int *status) { *status = ReadFpgaReg(fd,TMSYNC_MANIPULATE_OFFSET + GET_LOCAL_CLOCK_STATUS_ADDR_OFFSET); return; } 
+void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,TMSYNC_MANIPULATE_OFFSET + GET_LOCAL_CLOCK_STATUS_ADDR_OFFSET); return; }
+有什么区别 
+调用使用GetClockBeingStatus(fd, &status);和GetClockBeingStatus(fd, status);
+又有什么区别
 ```
