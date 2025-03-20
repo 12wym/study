@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note.md",
+                "file": "note/debug.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -36,12 +36,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note.md",
+                "file": "note/debug.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/note.md",
+                "file": "note/debug.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "debug 的大纲"
             }
           }
         ],
@@ -195,9 +195,10 @@
   },
   "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
+    "note/note.md",
+    "note/debug.md",
     "GDB中文调试手册.pdf",
     "note/Pasted image 20250317162102.png",
-    "note/note.md",
     "note/Pasted image 20250317162324.png",
     "note/Pasted image 20250317162305.png",
     "note/Pasted image 20250317162206.png",
@@ -222,7 +223,6 @@
     "mystudy",
     "study/mystudy/欢迎.md",
     "study/mystudy",
-    "未命名.md.baiduyun.uploading.cfg",
-    "driver/driver.md.baiduyun.uploading.cfg"
+    "未命名.md.baiduyun.uploading.cfg"
   ]
 }
