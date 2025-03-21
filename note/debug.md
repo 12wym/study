@@ -17,3 +17,9 @@
 `interactive debugging`(eg:GDB)
 `debugging frameworks`(eg:Valgrind)
 ```
+
+## example 1
+
+```c
+
+```
