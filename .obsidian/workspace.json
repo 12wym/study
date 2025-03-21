@@ -12,12 +12,14 @@
             "id": "5f1eeb2375facf15",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "note/debug/Pasted image 20250321095413.png"
+                "file": "note/debug/debug.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250321095413"
+              "icon": "lucide-file",
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -32,12 +34,14 @@
             "id": "989974176bd33b30",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "note/debug/Pasted image 20250321095413.png"
+                "file": "note/debug/debug.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250321095413"
+              "icon": "lucide-file",
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -162,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/debug/Pasted image 20250321095413.png",
+                "file": "note/debug/debug.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pasted image 20250321095413 的大纲"
+              "title": "debug 的大纲"
             }
           }
         ],
@@ -191,10 +195,10 @@
   },
   "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
+    "note/debug/Pasted image 20250321095413.png",
     "note/debug/debug.md",
     "note/note/Pasted image 20250317161707.png",
     "note/note",
-    "note/debug/Pasted image 20250321095413.png",
     "note/debug",
     "note/note/note.md",
     "note/img.md",
