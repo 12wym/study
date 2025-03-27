@@ -373,6 +373,7 @@ int main()
 
 	return 0;
 }
+
 ```
 
 ![[Pasted image 20250303224951.png]]
@@ -380,6 +381,56 @@ int main()
 对于结构体内部地址分配
 ```
 ![[Pasted image 20250303225941.png]]
+
+```c
+struct test {
+    short age;     // 2 字节
+    int sex;       // 4 字节
+    char weight;   // 1 字节
+    double height; // 8 字节
+};
+
+/*在 C 语言中，结构体的内存布局受到 **字节对齐（Alignment）** 规则的影响，
+不同编译器或平台可能会有所不同。
+假设在 **常见的 64 位 x86 或 ARM 平台**（默认使用最大字段的对齐方式）*/
+
+```
+![[Pasted image 20250327102819.png]]
+```c
+如果想减少 **填充字节**，可以使用 `#pragma pack(n)` 让编译器调整对齐方式：
+
+#pragma pack(1)  // 让所有成员按 1 字节对齐
+struct test {
+    short age;
+    int sex;
+    char weight;
+    double height;
+};
+#pragma pack()  // 恢复默认对齐
+
+这样结构体大小会变成 **15 字节**，但可能导致 CPU 访问效率下降。
+
+优化字段顺序
+struct test {
+    double height;  // 8 字节对齐
+    int sex;        // 4 字节对齐
+    short age;      // 2 字节对齐
+    char weight;    // 1 字节对齐
+};
+
+地址  |  字节
+--------------------------
+0-7   |  height (double)
+8-11  |  sex (int)
+12-13 |  age (short)
+14    |  weight (char)
+15    |  (填充 1 字节)
+--------------------------
+总大小 = 16 字节
+
+```
+
+![[Pasted image 20250327103020.png]]
 
 ## 联合体
 
