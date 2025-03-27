@@ -382,6 +382,8 @@ int main()
 ```
 ![[Pasted image 20250303225941.png]]
 
+### 结构体字节对齐
+
 ```c
 struct test {
     short age;     // 2 字节
