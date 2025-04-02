@@ -144,9 +144,36 @@ int main()
 
 指针所指向的数据类型会影响以下方面
 1.指针解引用时访问的字节数
-char *ptr;
-int *ptr;
-double *
+char *ptr;    1字节
+int *ptr;     4字节
+double *ptr;  8字节
+```
+```c
+int x = 0x12345678;
+int* int_ptr = &x;
+char* char_ptr = (char*)&x;
+printf("%x\n",*int_ptr);  0x12345678
+printf("%x\n",*char_ptr); 0x78
+```
+```bash
+2.指针算术运算的步长
+指针加减整数n时，实际的偏移量是n*sizeof(指向的数据类型)
+
+char *ptr: ptr + 1    移动1字节
+int *ptr: ptr + 1     移动4字节
+double *ptr: ptr + 1  移动8字节
+```
+```c
+int arr[3] ={10,20,30};
+int* ptr = arr;
+printf("%d\n",*(ptr + 1));输出20
+
+char *cptr = (char*)arr;
+printf("%d\n".*(cptr + 4));输出20
+```
+```bash
+内存对齐(Alignment)
+
 ```
 ## lsblk和df -h,fdisk -l的区别与应用场景
 
