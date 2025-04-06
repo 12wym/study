@@ -260,5 +260,6 @@ tftp -g -r test.c 192.168.10.100
 ## CAN
 
 ```bash
-
+CAN的全称为 Controller Area Network
+特点：多主控制，根据标识符决定优先级
 ```

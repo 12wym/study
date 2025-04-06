@@ -37,7 +37,7 @@
               "type": "markdown",
               "state": {
                 "file": "note/note/note.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
@@ -193,25 +193,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "989974176bd33b30",
+  "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
     "C/C learn.md",
     "note/note/note.md",
-    "note/img.md",
+    "C/Pasted image 20250327103020.png",
     "note/debug/debug.md",
+    "note/img.md",
+    "note/note/Pasted image 20250317162324.png",
     "PCI/image-4.png",
     "PCI/image-3.png",
     "PCI/image-2.png",
     "PCI/image-1.png",
     "PCI/image.png",
-    "Pasted image 20250327103020.png",
     "C/Pasted image 20250327102819.png",
     "note/debug/Pasted image 20250321095413.png",
     "note/note/Pasted image 20250317161707.png",
     "note/note",
     "note/debug",
     "GDB中文调试手册.pdf",
-    "note/note/Pasted image 20250317162102.png",
     "driver/driver.md",
     "C/Pasted image 20250303225941.png.~tmp",
     "C/Pasted image 20250303115112.png~RF33eb550.TMP",
