@@ -252,3 +252,7 @@ void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,
 ![[Pasted image 20250317162324.png]]
 
 ## TFTP
+
+```c
+tftp -g -r test.c 192.168.10.100
+```
