@@ -256,3 +256,9 @@ void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,
 ```c
 tftp -g -r test.c 192.168.10.100
 ```
+
+## CAN
+
+```bash
+
+```
