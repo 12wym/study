@@ -250,3 +250,5 @@ void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,
 ![[Pasted image 20250317162206.png]]
 ![[Pasted image 20250317162305.png]]
 ![[Pasted image 20250317162324.png]]
+
+## TFTP
