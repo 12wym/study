@@ -193,12 +193,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5f1eeb2375facf15",
+  "active": "989974176bd33b30",
   "lastOpenFiles": [
-    "Pasted image 20250407170707.png",
+    "note/note/Pasted image 20250407170707.png",
+    "note/note/note.md",
+    "note/note/Pasted image 20250407213224.png",
     "note/note/Pasted image 20250406231243.png",
     "note/note/Pasted image 20250406231008.png",
-    "note/note/note.md",
     "C/C learn.md",
     "C/Pasted image 20250327103020.png",
     "note/debug/debug.md",
@@ -208,8 +209,6 @@
     "PCI/image-3.png",
     "PCI/image-2.png",
     "PCI/image-1.png",
-    "PCI/image.png",
-    "C/Pasted image 20250327102819.png",
     "note/note",
     "note/debug",
     "GDB中文调试手册.pdf",
