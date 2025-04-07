@@ -37,7 +37,7 @@
               "type": "markdown",
               "state": {
                 "file": "note/note/note.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -193,7 +193,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aea5ffb72fea0c14",
+  "active": "989974176bd33b30",
   "lastOpenFiles": [
     "note/note/Pasted image 20250406231243.png",
     "note/note/Pasted image 20250406231008.png",
