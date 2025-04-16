@@ -45,6 +45,8 @@ trace-cmd report > trace.log 生成报告
 
 cat trace.log
 
+strace用于追踪系统调用 strace netcat -l -p 1234
+elitrace用于追踪库调用 ltrace netcat -l -p 1234
 ```
 
 ![[Pasted image 20250321095413.png]]
