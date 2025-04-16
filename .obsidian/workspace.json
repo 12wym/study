@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note/note.md",
+                "file": "note/debug/debug.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -36,12 +36,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note/note.md",
+                "file": "note/debug/debug.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "debug"
             },
             "group": "f2827017ecec52a5"
           }
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/note/note.md",
+                "file": "note/debug/debug.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "debug 的大纲"
             }
           }
         ],
@@ -193,8 +193,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aea5ffb72fea0c14",
+  "active": "989974176bd33b30",
   "lastOpenFiles": [
+    "note/debug/Pasted image 20250321095413.png",
+    "note/debug/debug.md",
+    "note/note/note.md",
     "note/note/Pasted image 20250408113533.png",
     "note/note/Pasted image 20250408112808.png",
     "note/note/Pasted image 20250408111535.png",
@@ -203,12 +206,9 @@
     "note/note/Pasted image 20250407220942.png",
     "Pasted image 20250407220654.png",
     "note/note/Pasted image 20250407220621.png",
-    "note/note/note.md",
     "note/note/Pasted image 20250407170707.png",
     "note/note/Pasted image 20250407213224.png",
-    "note/note/Pasted image 20250406231243.png",
     "C/C learn.md",
-    "note/debug/debug.md",
     "note/img.md",
     "note/note",
     "note/debug",
