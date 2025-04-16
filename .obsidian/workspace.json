@@ -6,7 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 67.52199413489735,
+        "dimension": 56.524926686217015,
         "children": [
           {
             "id": "5f1eeb2375facf15",
@@ -28,7 +28,7 @@
       {
         "id": "88d46c0c41e88bdf",
         "type": "tabs",
-        "dimension": 32.47800586510264,
+        "dimension": 43.47507331378299,
         "children": [
           {
             "id": "989974176bd33b30",
@@ -193,7 +193,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "989974176bd33b30",
+  "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
     "note/debug/Pasted image 20250321095413.png",
     "note/debug/debug.md",
