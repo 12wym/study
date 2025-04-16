@@ -21,7 +21,10 @@
 ## example 1
 
 ```c
+$ file vmlinux
+vmlinux: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=4f9d1f43c6bcdb61f5869edb30fc4910031f3848, with debug_info, not stripped
 
+aarch64-none-linux-gnu-objdump -d vmlinux 反编译可查看该文件中符号信息
 ```
 
 ![[Pasted image 20250321095413.png]]
