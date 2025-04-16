@@ -22,9 +22,19 @@
 
 ```c
 $ file vmlinux
+
 vmlinux: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=4f9d1f43c6bcdb61f5869edb30fc4910031f3848, with debug_info, not stripped
 
 aarch64-none-linux-gnu-objdump -d vmlinux 反编译可查看该文件中符号信息
+
+mount -t tracefs tracefs /sys/
+cat available_tracers 查看已存在的动态追踪工具
+timerlat osnoise hwlat blk mmiotrace function_graph wakeup_dl wakeup_rt wakeup function nop
+
+echo function_graph > current_tracer
+
+cat trace_pipe 可以查看正在运行的所有内核程序
+
 ```
 
 ![[Pasted image 20250321095413.png]]
