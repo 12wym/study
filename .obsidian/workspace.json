@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/debug/debug.md",
+                "file": "note/note/note.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "debug"
+              "title": "note"
             },
             "group": "f2827017ecec52a5"
           }
@@ -36,12 +36,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/debug/debug.md",
+                "file": "note/note/note.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "debug"
+              "title": "note"
             },
             "group": "f2827017ecec52a5"
           }
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/debug/debug.md",
+                "file": "note/note/note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "debug 的大纲"
+              "title": "note 的大纲"
             }
           }
         ],
@@ -193,11 +193,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5f1eeb2375facf15",
+  "active": "aea5ffb72fea0c14",
   "lastOpenFiles": [
-    "note/debug/Pasted image 20250321095413.png",
+    "driver/driver.md",
+    "net/net.md",
     "note/debug/debug.md",
     "note/note/note.md",
+    "note/debug/Pasted image 20250321095413.png",
     "note/note/Pasted image 20250408113533.png",
     "note/note/Pasted image 20250408112808.png",
     "note/note/Pasted image 20250408111535.png",
@@ -207,13 +209,11 @@
     "Pasted image 20250407220654.png",
     "note/note/Pasted image 20250407220621.png",
     "note/note/Pasted image 20250407170707.png",
-    "note/note/Pasted image 20250407213224.png",
     "C/C learn.md",
     "note/img.md",
     "note/note",
     "note/debug",
     "GDB中文调试手册.pdf",
-    "driver/driver.md",
     "C/Pasted image 20250303225941.png.~tmp",
     "C/Pasted image 20250303115112.png~RF33eb550.TMP",
     "C/Pasted image 20250303115112.png.~tmp",

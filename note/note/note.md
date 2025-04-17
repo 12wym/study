@@ -359,3 +359,57 @@ ACK段，表示确认正常接收的段
 中间隔由3个隐性位构成，总线空闲为隐性电平，长度没有限制，本状态下表示总线空闲，发送单元可以访问总线。延迟发送由8个隐性位构成，处于被动错误状态的单元发送一个消息后的帧间隔中才会有延迟发送。
 ```
 ![[Pasted image 20250408113533.png]]
+
+## Makefile
+
+```bash
+CXX = g++
+CXXFLAGS = -Wall
+TARGET = server client
+
+all:$(TARGET)
+
+server: server.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+client: client.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+clean:
+	rm -f $(TARGET)
+
+CXX = g++
+- `CXX` 是一个变量，指定使用的 C++ 编译器
+- 这里设为 `g++`，表示使用 GNU C++ 编译器
+
+CXXFLAGS = -Wall
+- `CXXFLAGS` 是编译参数的变量
+- `-Wall`：开启所有常见的编译警告
+
+TARGET = server client
+- 定义了最终要生成的两个目标文件（可执行程序）名字：`server` 和 `client`
+- 后续用于 `all` 和 `clean`
+
+all:$(TARGET)
+- 这是默认目标（在命令行输入 `make` 就执行这个）
+- 它依赖于 `$(TARGETS)`，也就是 `server` 和 `client`
+- 表示要编译所有目标
+
+server: server.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $^
+- `server` 是目标名
+- 它依赖 `server.cpp`（当 `.cpp` 修改时会重新编译）
+- `$(CXX)`：替换为 `g++`
+- `$(CXXFLAGS)`：替换为 `-Wall -O2`
+- `-o $@`：`$@` 表示目标名（即 `server`）
+- `$^`：表示所有依赖文件（这里就是 `server.cpp`）
+g++ -Wall -o server server.cpp
+
+client: client.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $^
+同理
+
+clean:
+	rm -f $(TARGETS)
+执行 `make clean` 会执行 `rm -f server client`，清除构建产物。
+```
