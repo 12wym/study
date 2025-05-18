@@ -4,22 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "f3ab59f8da204b23",
+        "id": "f834bcbf21547c03",
         "type": "tabs",
         "children": [
           {
-            "id": "5f1eeb2375facf15",
+            "id": "23b7df13d31c0003",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "note/debug/debug.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
+              "title": "debug"
+            },
+            "group": "241559ee3782bb70"
+          }
+        ]
+      },
+      {
+        "id": "b038912792779aa8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e3d71089bfc91da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note/debug/debug.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "debug"
+            },
+            "group": "241559ee3782bb70"
           }
         ]
       }
@@ -78,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 200
   },
   "right": {
     "id": "57ccba91c104d57c",
@@ -142,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "note/debug/debug.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "debug 的大纲"
             }
           }
         ],
@@ -156,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,12 +192,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5f1eeb2375facf15",
+  "active": "23b7df13d31c0003",
   "lastOpenFiles": [
+    "C/C learn.md",
     "note/note/note.md",
+    "note/debug/debug.md",
     "driver/driver.md",
     "net/net.md",
-    "note/debug/debug.md",
+    "PCI/PCI.md",
+    "note/img.md",
+    "README.md",
     "note/debug/Pasted image 20250321095413.png",
     "note/note/Pasted image 20250408113533.png",
     "note/note/Pasted image 20250408112808.png",
@@ -185,8 +212,6 @@
     "Pasted image 20250407220654.png",
     "note/note/Pasted image 20250407220621.png",
     "note/note/Pasted image 20250407170707.png",
-    "C/C learn.md",
-    "note/img.md",
     "note/note",
     "note/debug",
     "GDB中文调试手册.pdf",
@@ -197,7 +222,6 @@
     "未命名",
     "C",
     "note",
-    "README.md",
     "mystudy/README.md",
     "mystudy",
     "study/mystudy/欢迎.md"
