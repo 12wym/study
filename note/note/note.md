@@ -468,6 +468,8 @@ gdb -tui ./myprogram core
 
 (gdb) lay next            #源代码+汇编代码+命令窗口
 nexti next
-(gdb) x/i $pc
-(gdb) lay next            #源代码+汇编代码+命令窗口
+(gdb) x/i $pc             #显示**当前即将执行的汇编指令**。
+(gdb) info registers      #显示当前 CPU 寄存器的值
 ```
+
+## vim
