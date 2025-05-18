@@ -466,4 +466,8 @@ gdb -tui ./myprogram core
 
 (gdb) quit
 
+(gdb) lay next            #源代码+汇编代码+命令窗口
+nexti next
+(gdb) x/i $pc
+(gdb) lay next            #源代码+汇编代码+命令窗口
 ```
