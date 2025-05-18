@@ -413,3 +413,30 @@ clean:
 	rm -f $(TARGETS)
 执行 `make clean` 会执行 `rm -f server client`，清除构建产物。
 ```
+
+## GDB
+
+```bash
+准备阶段
+ulimit -c unlimited
+sudo sysctl -w kernel.core_pattern="./core.%e.%p.%t"
+
+|参数|含义|示例|
+|---|---|---|
+|`%e`|**可执行文件名**（不含路径）|`myprogram`|
+|`%p`|**进程号（PID）**|`12345`|
+|`%t`|**core 文件生成时间戳（UNIX时间）**|`1716052401`|
+|`%u`|进程所属用户的 UID|`1000`|
+|`%g`|进程所属组的 GID|`1000`|
+|`%s`|导致 core dump 的信号编号（如 SIGSEGV=11）|`11`|
+|`%h`|主机名|`ubuntu`|
+|`%c`|core dump 限制值（从 `RLIMIT_CORE` 获取）|`unlimited` or 0|
+
+core.myprogram.12345.1716052401
+
+编译阶段
+gcc -g -o myprogram myprogram.c
+
+调试阶段
+gdb -tui ./myprogram core
+```
