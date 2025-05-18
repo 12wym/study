@@ -6,7 +6,6 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 57.81354795439303,
         "children": [
           {
             "id": "5f1eeb2375facf15",
@@ -20,30 +19,7 @@
               },
               "icon": "lucide-file",
               "title": "README"
-            },
-            "group": "f2827017ecec52a5"
-          }
-        ]
-      },
-      {
-        "id": "88d46c0c41e88bdf",
-        "type": "tabs",
-        "dimension": 42.18645204560698,
-        "children": [
-          {
-            "id": "989974176bd33b30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            },
-            "group": "f2827017ecec52a5"
+            }
           }
         ]
       }
@@ -193,7 +169,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "989974176bd33b30",
+  "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
     "note/note/note.md",
     "driver/driver.md",
