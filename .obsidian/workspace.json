@@ -6,7 +6,7 @@
       {
         "id": "f3ab59f8da204b23",
         "type": "tabs",
-        "dimension": 56.524926686217015,
+        "dimension": 66.26425217974514,
         "children": [
           {
             "id": "5f1eeb2375facf15",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note/note.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "README"
             },
             "group": "f2827017ecec52a5"
           }
@@ -28,7 +28,7 @@
       {
         "id": "88d46c0c41e88bdf",
         "type": "tabs",
-        "dimension": 43.47507331378299,
+        "dimension": 33.735747820254865,
         "children": [
           {
             "id": "989974176bd33b30",
@@ -36,12 +36,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/note/note.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "README"
             },
             "group": "f2827017ecec52a5"
           }
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/note/note.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -189,15 +189,16 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aea5ffb72fea0c14",
+  "active": "5f1eeb2375facf15",
   "lastOpenFiles": [
+    "note/note/note.md",
     "driver/driver.md",
     "net/net.md",
     "note/debug/debug.md",
-    "note/note/note.md",
     "note/debug/Pasted image 20250321095413.png",
     "note/note/Pasted image 20250408113533.png",
     "note/note/Pasted image 20250408112808.png",
