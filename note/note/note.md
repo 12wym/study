@@ -473,3 +473,7 @@ nexti next
 ```
 
 ## vim
+
+```bash
+
+```
