@@ -413,3 +413,67 @@ clean:
 	rm -f $(TARGETS)
 执行 `make clean` 会执行 `rm -f server client`，清除构建产物。
 ```
+
+## GDB
+
+```bash
+准备阶段
+ulimit -c unlimited
+sudo sysctl -w kernel.core_pattern="./core.%e.%p.%t"
+
+|参数|含义|示例|
+|---|---|---|
+|`%e`|**可执行文件名**（不含路径）|`myprogram`|
+|`%p`|**进程号（PID）**|`12345`|
+|`%t`|**core 文件生成时间戳（UNIX时间）**|`1716052401`|
+|`%u`|进程所属用户的 UID|`1000`|
+|`%g`|进程所属组的 GID|`1000`|
+|`%s`|导致 core dump 的信号编号（如 SIGSEGV=11）|`11`|
+|`%h`|主机名|`ubuntu`|
+|`%c`|core dump 限制值（从 `RLIMIT_CORE` 获取）|`unlimited` or 0|
+
+core.myprogram.12345.1716052401
+
+编译阶段
+gcc -g -o myprogram myprogram.c
+
+调试阶段
+gdb -tui ./myprogram core
+
+(gdb) break main              # 在 main 函数处设置断点
+(gdb) break myfunction        # 在某个函数入口设置断点
+(gdb) break myprogram.c:42    # 在特定文件的第42行设置断点
+
+(gdb) info breakpoints
+
+(gdb) next        # 执行下一行，不进入函数内部（step over）
+(gdb) step        # 执行下一行，若是函数则进入函数内部（step into）
+(gdb) finish      # 跳出当前函数
+
+(gdb) print x             # 查看变量 x 的值
+(gdb) display x           # 每步执行后自动显示 x 的值
+(gdb) set var x = 10      # 修改变量的值
+
+(gdb) break myprogram.c:42 if x > 5
+
+(gdb) delete 1        # 删除编号为 1 的断点
+(gdb) disable 1       # 禁用断点
+(gdb) enable 1        # 启用断点
+
+(gdb) backtrace           # 查看函数调用栈（调试崩溃时很有用）
+(gdb) info locals         # 查看当前函数的局部变量
+(gdb) info args           # 查看函数参数
+
+(gdb) quit
+
+(gdb) lay next            #源代码+汇编代码+命令窗口
+nexti next
+(gdb) x/i $pc             #显示**当前即将执行的汇编指令**。
+(gdb) info registers      #显示当前 CPU 寄存器的值
+```
+
+## vim
+
+```bash
+
+```

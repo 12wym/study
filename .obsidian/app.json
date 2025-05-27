@@ -1,5 +1,11 @@
 {
   "livePreview": false,
   "defaultViewMode": "source",
-  "showLineNumber": true
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
