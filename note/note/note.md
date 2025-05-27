@@ -477,3 +477,26 @@ nexti next
 ```bash
 
 ```
+
+## git
+```bash
+git log 查看日志操作
+
+git checkout -b 307 创建分支并进入，但存在会拷贝原分支的数据的情况
+
+git branch 查看分支都有哪些
+
+git status 查看分支状态
+
+git add ./interface0307/
+
+git commit -m "424"
+
+git push -u origin 424
+
+git rm -r interface0522
+
+git commit -m "rm 0522"
+
+git push
+```
