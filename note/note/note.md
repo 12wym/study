@@ -488,7 +488,7 @@ git branch 查看分支都有哪些
 
 git status 查看分支状态
 
-git add ./interface0307/
+git add .
 
 git commit -m "424"
 
