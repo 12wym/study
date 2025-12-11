@@ -479,6 +479,44 @@ nexti next
 ```
 
 ## git
+
+### 创建本地库与链接
+```bash
+git init
+
+## 首先进行仓库关联
+git remote add origin https://github.com/yourname/your-repo.git
+git remote add origin git@github.com:yourname/your-repo.git
+
+## 如果输错了
+git remote set-url origin <新的地址>
+
+github配置ssh
+
+ls ~/.ssh/id_rsa.pub
+## 没有则生成
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+## 复制该内容，登录 GitHub，添加到GitHub > Settings > SSH and GPG keys > New SSH Key
+cat ~/.ssh/id_rsa.pub
+
+
+## 测试是否连通
+ssh -T git@github.com
+https://git-lfs.com/
+
+## 大文件需要安装git lfs 
+
+## 文件夹下
+git lfs install
+git lfs track "*.mp4"
+
+git add .gitattributes
+git add "（3）演示视频/final.mp4"
+git commit -m "Add video using Git LFS"
+git push origin master
+
+```
+### 常用命令
 ```bash
 git log 查看日志操作
 
@@ -499,4 +537,106 @@ git rm -r interface0522
 git commit -m "rm 0522"
 
 git push
+
+git fetch --all 更新分支信息
+
+# 将main分支的所有内容合并到别的分支
+# 切换到 main 分支
+git checkout main
+
+# 创建一个临时分支备份（可选）
+git branch backup_522 522
+
+# 切换到 522 分支
+git checkout 522
+
+# 使用 main 的内容强制覆盖当前分支
+git reset --hard main
+
+# 强制推送（如果是远程分支）
+git push origin 522 --force
+
+#删除本地分支
+git branch -d master
+
+#删除远程 `master` 分支
+git push origin --delete master
+
+```
+
+## GPIO
+
+### Rockchip的引脚命名转换
+
+```bash
+rk3568
+#define GPIO_CHIP "/dev/gpiochip2"
+#define GPIO_LINE 28  // GPIO2_D4 3*8+4
+GPIO编号 = BANK × 32 + GROUP × 8 + n
+|字母|编号|
+|---|---|
+| A | 0 |
+| B | 1 |
+| C | 2 |
+| D | 3 |
+
+rk3588
+GPIO编号 = (GPIO组编号 * 32) + 脚位偏移
+GPIO_NUM = (GPIOx * 32) + (字母编号 * 8) + y
+GPIO1_A0 32*1+0 = 32
+
+貌似是一样的
+
+```
+
+### 标准Linux方式
+
+```bash
+GPIO编号 = bank × 32 + pin_index
+```
+
+### 举例
+
+```bash
+对于 `GPIO1_A6`：
+
+- **标准方式**：A组就是前8个引脚，A6是第6个 → pin_index = 6
+
+- **Rockchip方式**：A=group0, pin=6 → group × 8 + pin = 0 × 8 + 6 = 6
+
+所以最终都是：`bank × 32 + 6`
+
+
+|GPIO名称|标准计算|Rockchip计算|结果|
+
+|GPIO1_A0|1×32 + 0 = 32|1×32 + 0×8 + 0 = 32
+|GPIO1_A6|1×32 + 6 = 38|1×32 + 0×8 + 6 = 38
+|GPIO1_B3|1×32 + 11 = 43|1×32 + 1×8 + 3 = 43
+|GPIO2_D4|2×32 + 28 = 92|2×32 + 3×8 + 4 = 92
+
+```
+
+### 虚拟机共享文件夹
+
+```bash
+/etc/fstab
+
+.host:/    /mnt/hgfs    fuse.vmhgfs-fuse    allow_other,defaults    0    0
+```
+
+## 修改连接优先级
+
+```bash
+# 查看当前激活的连接
+nmcli connection show --active
+
+# 设置eth0连接自动连接并提高优先级
+sudo nmcli connection modify "eth0" connection.autoconnect yes
+sudo nmcli connection modify "eth0" connection.autoconnect-priority 100
+
+# 降低WiFi连接的自动连接优先级
+sudo nmcli connection modify "ym'phone" connection.autoconnect-priority 10
+
+# 重启NetworkManager
+sudo systemctl restart NetworkManager
 ```
