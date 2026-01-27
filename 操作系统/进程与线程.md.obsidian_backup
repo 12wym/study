@@ -1,23 +1,23 @@
 # 进程的创建
-![](./assets/进程与线程/6d25fd33e0bacbca6975a7fcdf48d761_720.jpg)
+![[6d25fd33e0bacbca6975a7fcdf48d761_720.jpg]]
 # 进程的切换终止阻塞和唤醒
-![](./assets/进程与线程/c123181b5e4fd063b5cac29f8291f23a_720.jpg)
+![[c123181b5e4fd063b5cac29f8291f23a_720.jpg]]
 # 进程通信
-![](./assets/进程与线程/b313b814432c8794632bc40481959028.jpg)
+![[b313b814432c8794632bc40481959028.jpg]]
 # 管道通信
-![](./assets/进程与线程/48aef2575e4e9e23c4960cc5c6d3f88c.jpg)
+![[48aef2575e4e9e23c4960cc5c6d3f88c.jpg]]
 # 进程与线程关系
-![](./assets/进程与线程/Pasted image 20251125160545.png)
+![[Pasted image 20251125160545.png]]
 # 用户级线程与内核级线程
-![](./assets/进程与线程/d34d1ab932a4a263d0568bd3aa4f62db.jpg)
+![[d34d1ab932a4a263d0568bd3aa4f62db.jpg]]
 # 进程与线程对应关系模型
-![](./assets/进程与线程/a8073d22c96c0c37f40a8be974b0937f_720.jpg)
+![[a8073d22c96c0c37f40a8be974b0937f_720.jpg]]
 # 进程与线程切换需要保存的资源
-![](./assets/进程与线程/922853bde5a0aa29920bc38094bc1a46_720.jpg)
+![[922853bde5a0aa29920bc38094bc1a46_720.jpg]]
 # 处理机调度策略
-![](./assets/进程与线程/d20f9ecb0fbb3cc51112e381f0715357_720.jpg)
+![[d20f9ecb0fbb3cc51112e381f0715357_720.jpg]]
 # 五状态模型与七状态模型，进程调度的时机
-![](./assets/进程与线程/c5f588cc91a0beea98497c71d17317ca.jpg)
+![[c5f588cc91a0beea98497c71d17317ca.jpg]]
 # 内核程序临界区不能进行调度与切换
 
 ```bash
@@ -45,11 +45,11 @@
 如：程序计数器PC、程序状态字PSW、各种数据寄存器等处理机现场信息，一般保存在进程控制块
 ```
 # 调度器/调度程序
-![](./assets/进程与线程/Pasted image 20251203173130.png)
+![[Pasted image 20251203173130.png]]
 ```bash
 调度时机：创建新进程，进程退出，运行进程阻塞，I/O中断发生
 ```
-![](./assets/进程与线程/Pasted image 20251211192301.png)
+![[Pasted image 20251211192301.png]]
 
 ## 闲逛进程
 
@@ -70,7 +70,7 @@ CPU利用率
 等待时间
 响应时间
 ```
-![](./assets/进程与线程/Pasted image 20251211200249.png)
+![[Pasted image 20251211200249.png]]
 ### 先来先服务FCFS
 
 ```bash
@@ -187,7 +187,7 @@ CPU利用率
 会导致饥饿
 ```
 
-![](./assets/进程与线程/Pasted image 20260108181004.png)
+![[Pasted image 20260108181004.png]]
 
 ## 多处理机调度
 
@@ -290,7 +290,7 @@ remainder section剩余区 做其他处理
 主要问题是：违背空闲让进原则
 ```
 
-![](./assets/进程与线程/Pasted image 20260111153247.png)
+![[Pasted image 20260111153247.png]]
 #### 双标志先检查
 
 ```bash
@@ -299,7 +299,7 @@ remainder section剩余区 做其他处理
 违反“忙则等待”；进入区的检查和上锁不是一气呵成的，检查后上锁前可能发生进程切换
 ```
 
-![](./assets/进程与线程/Pasted image 20260111154642.png)
+![[Pasted image 20260111154642.png]]
 #### 双标志后检查
 
 ```bash
@@ -309,7 +309,7 @@ remainder section剩余区 做其他处理
 双标志后检查法虽然解决了“忙则等待”的问题，但是违背了“空闲让进”“有限等待”，会产生饥饿
 ```
 
-![](./assets/进程与线程/Pasted image 20260111155401.png)
+![[Pasted image 20260111155401.png]]
 #### peterson算法
 
 ```bash
@@ -317,7 +317,7 @@ remainder section剩余区 做其他处理
 
 Peterson算法用软件方法解决了进程互斥问题，遵循了空闲让进、忙则等待、有限等待三个原则，但是依然未遵循让权等待的原则。
 ```
-![](./assets/进程与线程/Pasted image 20260111160056.png)
+![[Pasted image 20260111160056.png]]
 
 ### 互斥硬件实现方法
 
@@ -342,14 +342,14 @@ TSL指令是用硬件实现的，执行的过程不允许被中断，只能一�
 缺点：不满足“让权等待”原则，暂时无法进入临界区的进程会占用CPU并循环执行TSL指令，从而导致“忙等”。
 ```
 
-![](./assets/进程与线程/Pasted image 20260112150929.png)
+![[Pasted image 20260112150929.png]]
 #### Swap指令(XCHG指令)
 
 ```bash
 Swap指令是用硬件实现的，执行的过程不允许被中断，只能一气呵成。
 ```
 
-![](./assets/进程与线程/Pasted image 20260112151551.png)
+![[Pasted image 20260112151551.png]]
 
 ```bash
 进程互斥的四种软件实现方式（单标志法、双标志先检查、双标志后检查、Peterson算法）
@@ -394,7 +394,7 @@ wait、signal原语常简称为P、V操作（来自荷兰语proberen和verhogen�
 存在的问题：不满足“让权等待”原则，会发生“忙等”
 ```
 
-![](./assets/进程与线程/Pasted image 20260112154825.png)
+![[Pasted image 20260112154825.png]]
 
 ### 记录型信号量
 
@@ -408,7 +408,7 @@ typedef struct {
 
 ```
 
-![](./assets/进程与线程/Pasted image 20260112170605.png)
+![[Pasted image 20260112170605.png]]
 
 #### 信号量机制实现进程互斥
 
@@ -420,7 +420,7 @@ typedef struct {
 不同的临界资源需要设置不同的互斥信号量
 ```
 
-![](./assets/进程与线程/Pasted image 20260112204953.png)
+![[Pasted image 20260112204953.png]]
 
 #### 信号量机制实现进程同步
 
@@ -433,7 +433,7 @@ typedef struct {
 在后操作之前执行P(S)
 ```
 
-![](./assets/进程与线程/Pasted image 20260112205302.png)
+![[Pasted image 20260112205302.png]]
 
 ### 生产者-消费者问题
 
@@ -444,7 +444,7 @@ typedef struct {
 缓冲区是临界资源，各进程必须互斥地访问
 ```
 
-![](./assets/进程与线程/Pasted image 20260112210307.png)
+![[Pasted image 20260112210307.png]]
 
 ```bash
 semaphore mutex = 1; //互斥信号量，实现对缓冲区的互斥访问
@@ -455,7 +455,7 @@ semaphore full = 0; //同步信号量，非空缓冲区的数量
 V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 ```
 
-![](./assets/进程与线程/Pasted image 20260112210648.png)
+![[Pasted image 20260112210648.png]]
 
 #### 多生产者-多消费者问题
 
@@ -465,9 +465,9 @@ V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 原因在于：本题中的缓冲区大小为1，在任何时刻，apple、orange、plate三个同步信号量中最多只有一个是1。因此在任何时刻，最多只有一个进程的P操作不会被阻塞，并顺利地进入临界区
 ```
 
-![](./assets/进程与线程/Pasted image 20260113114115.png)
+![[Pasted image 20260113114115.png]]
 
-![](./assets/进程与线程/Pasted image 20260113115105.png)
+![[Pasted image 20260113115105.png]]
 
 #### 读者-写者问题
 
@@ -483,9 +483,9 @@ V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 潜在问题：只要有读进程还在读，写进程就要一直阻塞等待，导致“饿死”，因此这种算法中，读进程优先
 ```
 
-![](./assets/进程与线程/Pasted image 20260113224215.png)
+![[Pasted image 20260113224215.png]]
 
-![](./assets/进程与线程/Pasted image 20260115143705.png)
+![[Pasted image 20260115143705.png]]
 
 ## 哲学家进餐问题
 
@@ -497,9 +497,9 @@ V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 ```
 
 
-![](./assets/进程与线程/Pasted image 20260115155737.png)
-![](./assets/进程与线程/Pasted image 20260115160105.png)
-![](./assets/进程与线程/Pasted image 20260115160049.png)
+![[Pasted image 20260115155737.png]]
+![[Pasted image 20260115160105.png]]
+![[Pasted image 20260115160049.png]]
 
 ## 管程
 
@@ -526,7 +526,7 @@ V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 ```
 ### 管程解决生产者消费者问题
 
-![](./assets/进程与线程/Pasted image 20260115161537.png)
+![[Pasted image 20260115161537.png]]
 
 ## 死锁
 
@@ -534,7 +534,7 @@ V操作不会导致进程阻塞，因此两个V操作顺序可以交换
 在并发环境下，各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进的现象。
 ```
 
-![](./assets/进程与线程/Pasted image 20260115162839.png)
+![[Pasted image 20260115162839.png]]
 
 ### 死锁产生的必要条件
 
@@ -659,12 +659,12 @@ Max-Allocation=Need矩阵表示各进程最多还需要多少资源
 不断重复上述过程，看最终是否能让所有进程都加入安全序列。
 ```
 
-![](./assets/进程与线程/Pasted image 20260116163429.png)
+![[Pasted image 20260116163429.png]]
 
-![](./assets/进程与线程/Pasted image 20260116163440.png)
+![[Pasted image 20260116163440.png]]
 
-![](./assets/进程与线程/Pasted image 20260116165145.png)
-![](./assets/进程与线程/Pasted image 20260116170817.png)
+![[Pasted image 20260116165145.png]]
+![[Pasted image 20260116170817.png]]
 
 #### 检测和解除
 
@@ -682,7 +682,7 @@ Max-Allocation=Need矩阵表示各进程最多还需要多少资源
 死锁定理：如果某时刻系统的资源分配图是不可完全简化的，那么此时系统死锁
 ```
 
-![](./assets/进程与线程/Pasted image 20260117140249.png)
+![[Pasted image 20260117140249.png]]
 
 ```bash
 一旦检测出死锁的发生，就应该立即解除死锁
