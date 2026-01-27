@@ -239,17 +239,17 @@ void GetClockBeingStatus(int fd, unsigned int status) { status = ReadFpgaReg(fd,
 ```bash
 传递解读
 ```
-![](./assets/note/Pasted_image_20250317161707.png)
-![](./assets/note/Pasted_image_20250317161725.png)
-![](./assets/note/Pasted_image_20250317161755.png)
+![[Pasted image 20250317161707.png]]
+![[Pasted image 20250317161725.png]]
+![[Pasted image 20250317161755.png]]
 ```bash
 数组变量传递
 ```
-![](./assets/note/Pasted_image_20250317162102.png)
-![](./assets/note/Pasted_image_20250317162146.png)
-![](./assets/note/Pasted_image_20250317162206.png)
-![](./assets/note/Pasted_image_20250317162305.png)
-![](./assets/note/Pasted_image_20250317162324.png)
+![[Pasted image 20250317162102.png]]
+![[Pasted image 20250317162146.png]]
+![[Pasted image 20250317162206.png]]
+![[Pasted image 20250317162305.png]]
+![[Pasted image 20250317162324.png]]
 
 ## TFTP
 
@@ -275,15 +275,15 @@ CAN_H，CAN_L
 隐形电平表示逻辑1，此时CAN_H,CAN_L:2.5V
 
 ```
-![](./assets/note/Pasted_image_20250406231008.png)
-![](./assets/note/Pasted_image_20250406231243.png)
+![[Pasted image 20250406231008.png]]
+![[Pasted image 20250406231243.png]]
 ```bash
 CAN协议有5种帧格式来传输数据：数据帧，遥控帧，错误帧，过载帧和帧间隔。
 其中数据帧和遥控帧有标准格式和扩展格式两种，
 标准格式有11位标识符（ID），扩展格式有29个标识符（ID）
 帧用途如下：
 ```
-![](./assets/note/Pasted_image_20250407170707.png)
+![[Pasted image 20250407170707.png]]
 ### 数据帧
 ```bash
 数据帧由7段组成
@@ -298,7 +298,7 @@ ACK段，表示确认正常接收的段
 帧结束，表示数据帧结束的段
  - 由7位隐性位构成
 ```
-![](./assets/note/Pasted_image_20250407213224.png)
+![[Pasted image 20250407213224.png]]
 ```bash
 D表示显性电平0，R表示隐性电平1，D/R表示显性或隐性，也就是0或1
 ```
@@ -307,17 +307,17 @@ D表示显性电平0，R表示隐性电平1，D/R表示显性或隐性，也就�
 控制段
 其中r1和r0为保留位，保留位必须以显性电平发送。DLC为数据长度，高位在前，DLC段有效值范围为0~8
 ```
-![](./assets/note/Pasted_image_20250407220621.png)
+![[Pasted image 20250407220621.png]]
 ```bash
 CRC段
 由15位CRC值与1位CRC界定符组成，计算范围包括：帧起始，仲裁段，控制段，数据段
 ```
-![](./assets/note/Pasted_image_20250407220942.png)
+![[Pasted image 20250407220942.png]]
 ```bash
 ACK段
 由ACK槽和ACK界定符组成
 ```
-![](./assets/note/Pasted_image_20250407221128.png)
+![[Pasted image 20250407221128.png]]
 
 ### 遥控帧
 ```bash
@@ -330,7 +330,7 @@ ACK段，表示确认正常接收的段
 
 遥控帧结构基本和数据帧一样，最主要区别就是遥控帧没有数据段。遥控帧的RTR位为隐性，数据帧的RTR位为显性。DLC表示的是所请求的数据帧数据长度
 ```
-![](./assets/note/Pasted_image_20250407222612.png)
+![[Pasted image 20250407222612.png]]
 
 ### 错误帧
 
@@ -339,7 +339,7 @@ ACK段，表示确认正常接收的段
 错误标志有主动错误标志和被动错误标志两种，主动错误标志是6个显性位，被动错误标
 志是6个隐性位，错误界定符由8个隐性位组成。
 ```
-![](./assets/note/Pasted_image_20250408111535.png)
+![[Pasted image 20250408111535.png]]
 
 ### 过载帧
 
@@ -348,7 +348,7 @@ ACK段，表示确认正常接收的段
 过载标志由 6个显性位组成，与主动错误标志相同，过载界定符由 8个隐性位组成，与错
 误帧中的错误界定符构成相同。
 ```
-![](./assets/note/Pasted_image_20250408112808.png)
+![[Pasted image 20250408112808.png]]
 
 ### 帧间隔
 
@@ -358,7 +358,7 @@ ACK段，表示确认正常接收的段
 
 中间隔由3个隐性位构成，总线空闲为隐性电平，长度没有限制，本状态下表示总线空闲，发送单元可以访问总线。延迟发送由8个隐性位构成，处于被动错误状态的单元发送一个消息后的帧间隔中才会有延迟发送。
 ```
-![](./assets/note/Pasted_image_20250408113533.png)
+![[Pasted image 20250408113533.png]]
 
 ## Makefile
 

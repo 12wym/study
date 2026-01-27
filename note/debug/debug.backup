@@ -49,4 +49,4 @@ strace用于追踪系统调用 strace netcat -l -p 1234
 elitrace用于追踪库调用 ltrace netcat -l -p 1234
 ```
 
-![](./assets/debug/Pasted_image_20250321095413.png)
+![[Pasted image 20250321095413.png]]

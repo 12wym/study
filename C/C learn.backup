@@ -83,7 +83,7 @@ BL指令 Branch And Link 跳转执行，但执行前先记录返回地址
 LR = addrb
 PC = main地址
 ```
-![](./assets/C_learn/Pasted_image_20250301213330.png)
+![[Pasted image 20250301213330.png]]
 
 ## 变量是什么
 
@@ -118,18 +118,18 @@ int main()
 	return 0;
 }
 ```
-![](./assets/C_learn/Pasted_image_20250301215443.png)
+![[Pasted image 20250301215443.png]]
 
 ```bash
 f103的内存基地址为0x20000000，结束地址0x20010000
 ```
 
 ## 栈 使用图
-![](./assets/C_learn/Pasted_image_20250301221737.png)
+![[Pasted image 20250301221737.png]]
 ```bash
 跳转前先记录返回地址addrb，PC跳转去执行mymain地址
 ```
-![](./assets/C_learn/Pasted_image_20250301222405.png)
+![[Pasted image 20250301222405.png]]
 ```bash
 push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b分配空间
 在add中也是保存地址addrc，PC跳转去执行add的地址
@@ -137,13 +137,13 @@ push {r3,lr} 马上保存LR，因为即将调用C函数add,用R3来占坑，给b
 ```
 
 ## 局部变量的初始化
-![](./assets/C_learn/Pasted_image_20250301221918.png)
+![[Pasted image 20250301221918.png]]
 ```bash
 将0x1C8移入到寄存器R0
 并将R0的值存入sp+0x00(0x2000FFF8)指向的地址中
 ```
 ### 加入char name后
-![](./assets/C_learn/Pasted_image_20250301223742.png)
+![[Pasted image 20250301223742.png]]
 ```bash
 0x2000FF94 = 0x2000FFFC - 104
 其中变量b的地址
@@ -153,7 +153,7 @@ sp + 0x64
 ```
 
 ## 局部变量的释放
-![](./assets/C_learn/Pasted_image_20250301225542.png)
+![[Pasted image 20250301225542.png]]
 ```bash
 PUSH lr,r0 分别指向0x2000FF90，0x2000FF8C
 SUB 将sp指向0x2000FF88
@@ -176,25 +176,25 @@ PC <= lr
 
 ## 全局变量和静态变量
 
-![](./assets/C_learn/Pasted_image_20250302135026.png)
+![[Pasted image 20250302135026.png]]
 ```bash
 如果像局部变量一样初始化，浪费指令和flash空间
 
 将初始化值放在flash的data段，并通过一个copy函数，一次性复制到内存中
 ```
-![](./assets/C_learn/Pasted_image_20250302140812.png)
+![[Pasted image 20250302140812.png]]
 ```bash
 链接器给变量的分配指定了地址
 ```
-![](./assets/C_learn/Pasted_image_20250302141047.png)
+![[Pasted image 20250302141047.png]]
 ```bash
 得到地址
 读地址
 写入变量b
 ```
 ### 对于超多初值为0或者无初值的变量
-![](./assets/C_learn/Pasted_image_20250302142608.png)
-![](./assets/C_learn/Pasted_image_20250302142528.png)
+![[Pasted image 20250302142608.png]]
+![[Pasted image 20250302142528.png]]
 ```bash
 将变量从flash中复制到内存中，并使用一个赋值函数进行统一赋值
 ```
@@ -213,7 +213,7 @@ str = malloc(100);
 strcpy(str,"hhhhh");
 free(str);
 ```
-![](./assets/C_learn/Pasted_image_20250302165602.png)
+![[Pasted image 20250302165602.png]]
 ```
 int b;
 char name[100];
@@ -252,10 +252,10 @@ int main()
 	return 0;
 }
 ```
-![](./assets/C_learn/Pasted_image_20250302200322.png)
+![[Pasted image 20250302200322.png]]
 
 ## 函数
-![](./assets/C_learn/Pasted_image_20250303115112.png)
+![[Pasted image 20250303115112.png]]
 ```c
 int add_val(int v)
 {
@@ -301,13 +301,13 @@ int main()
 
 调用函数:让CPU的PC寄存器等于"一系列机器码"的首地址，就是函数地址
 ```
-![](./assets/C_learn/Pasted_image_20250303194054.png)
-![](./assets/C_learn/Pasted_image_20250303200451.png)
-![](./assets/C_learn/Pasted_image_20250303200724.png)
+![[Pasted image 20250303194054.png]]
+![[Pasted image 20250303200451.png]]
+![[Pasted image 20250303200724.png]]
 
 ### 传递参数
 
-![](./assets/C_learn/Pasted_image_20250303205650.png)
+![[Pasted image 20250303205650.png]]
 ```bash
 (实参)将参数的数值传递到R0寄存器，并没有影响到参数本身。传递实参就是传递实参的副本，如果想要修改参数本身，需要传递参数的地址
 ```
@@ -348,8 +348,8 @@ int main()
 	return 0;
 }
 ```
-![](./assets/C_learn/Pasted_image_20250303211307.png)
-![](./assets/C_learn/Pasted_image_20250303211513.png)
+![[Pasted image 20250303211307.png]]
+![[Pasted image 20250303211513.png]]
 
 ## 结构体
 
@@ -376,11 +376,11 @@ int main()
 
 ```
 
-![](./assets/C_learn/Pasted_image_20250303224951.png)
+![[Pasted image 20250303224951.png]]
 ```bash
 对于结构体内部地址分配
 ```
-![](./assets/C_learn/Pasted_image_20250303225941.png)
+![[Pasted image 20250303225941.png]]
 
 ### 结构体字节对齐
 
@@ -397,7 +397,7 @@ struct test {
 假设在 **常见的 64 位 x86 或 ARM 平台**（默认使用最大字段的对齐方式）*/
 
 ```
-![](./assets/C_learn/Pasted_image_20250327102819.png)
+![[Pasted image 20250327102819.png]]
 ```c
 如果想减少 **填充字节**，可以使用 `#pragma pack(n)` 让编译器调整对齐方式：
 
@@ -442,7 +442,7 @@ struct test {
 	结构体的**总大小** 需要**是对齐要求最高的成员的整数倍**，可能会在结构体末尾填充额外字节。
 ```
 
-![](./assets/C_learn/Pasted_image_20250327103020.png)
+![[Pasted image 20250327103020.png]]
 
 ## 联合体
 
@@ -465,9 +465,9 @@ int main()
 	return 0;
 }
 ```
-![](./assets/C_learn/Pasted_image_20250305161646.png)
-![](./assets/C_learn/Pasted_image_20250305161735.png)
-![](./assets/C_learn/Pasted_image_20250305161810.png)
+![[Pasted image 20250305161646.png]]
+![[Pasted image 20250305161735.png]]
+![[Pasted image 20250305161810.png]]
 ```bash
 修改联合体内部变量数据类型，可以看到联合体内部变量首地址相同，但大小不同
 ```
@@ -498,7 +498,7 @@ struct test{
 	double height;
 };
 ```
-![](./assets/C_learn/Pasted_image_20250305162713.png)
+![[Pasted image 20250305162713.png]]
 ```bash
 先读取sp指向的地址存的值，清除第一位,加一,再写回去
 再读取sp指向的地址存的值，清除第二位，再写回去
