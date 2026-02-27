@@ -643,6 +643,12 @@ sudo systemctl restart NetworkManager
 
 # 通用寄存器
 
+```bash
+AArch64执行状态支持31个64位的通用寄存器，分别是X0～X30 寄存器，而AArch32状态支持16个32位的通用寄存器。
+
+在AArch64 状态下，使用X（如X0、X30 等）表示64 位通用寄存器。另外，还可以使用W 来表示低32 位的数据，如W0 表示X0 寄存器的低32 位数据，W1 表示X1 寄存器的低32位数据
+```
+
 ![[Pasted image 20260227131246.png]]
 
 # PSTATE寄存器
