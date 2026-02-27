@@ -643,7 +643,16 @@ sudo systemctl restart NetworkManager
 
 # 异常处理
 
+## 中断
+
 ```bash
 在ARM64处理器中，中断请求分为普通中断请求(IRQ)和快速中断请求(FIQ,优先级高)
+```
 
+![[Pasted image 20260227121646.png]]
+
+## 中止
+
+```bash
+指令中止和数据中止
 ```
