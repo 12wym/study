@@ -641,6 +641,18 @@ sudo nmcli connection modify "ym'phone" connection.autoconnect-priority 10
 sudo systemctl restart NetworkManager
 ```
 
+# 通用寄存器
+
+![[Pasted image 20260227131246.png]]
+
+# PSTATE寄存器
+
+![[Pasted image 20260227131325.png]]
+![[Pasted image 20260227131333.png]]
+
+# 特殊寄存器
+
+![[Pasted image 20260227131352.png]]
 # 异常处理
 
 ```bash
