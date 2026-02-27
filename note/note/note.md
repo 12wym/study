@@ -640,3 +640,10 @@ sudo nmcli connection modify "ym'phone" connection.autoconnect-priority 10
 # 重启NetworkManager
 sudo systemctl restart NetworkManager
 ```
+
+# 异常处理
+
+```bash
+在ARM64处理器中，中断请求分为普通中断请求(IRQ)和快速中断请求(FIQ,优先级高)
+
+```
