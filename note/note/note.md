@@ -643,6 +643,14 @@ sudo systemctl restart NetworkManager
 
 # 异常处理
 
+```bash
+异常分为同步异常和异步异常
+中断是异步异常的一种；指令异常和数据异常为同步异常
+
+常见异步异常包括物理中断和虚拟中断
+物理中断：SError,IRQ,FIQ
+虚拟中断：vSError,vIRQ,vFIQ
+```
 ## 中断
 
 ```bash
@@ -677,4 +685,14 @@ HVC 指令：允许客户操作系统（guest OS）请求虚拟机监控器（hy
 SMC 指令：允许普通世界（normal world）中的程序请求安全监控器（secure monitor）的服务。
 ```
 
-## 异常deng
+## 异常等级
+
+```bash
+EL0为非特权模式，用于运行应用程序。
+EL1为特权模式，用于运行操作系统内核。
+EL2用于运行虚拟化管理程序。
+EL3用于运行安全世界的管理程序。
+```
+
+![[Pasted image 20260227123720.png]]
+
