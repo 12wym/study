@@ -17,3 +17,7 @@ SCL、SDA两根数据线
 
 ![[Pasted image 20260228170148.png]]
 
+![[Pasted image 20260228170648.png]]
+![[Pasted image 20260228170818.png]]
+![[Pasted image 20260228170843.png]]
+
