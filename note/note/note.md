@@ -876,6 +876,18 @@ static struct softirq_action softirq_vec[NR_SOFTIRQS];
 
 ```
 
+#### 执行软中断时机
+
+```bash
+从一个硬件中断代码处返回时
+在ksoftirqd 内核线程中
+在那些显式检查和执行待处理的软中断的代码中，如网络子系统中
+
+不管是用什么办法唤起，软中断都要在do_softirq()中执行。
+```
+
+![[Pasted image 20260302154958.png]]
+
 ### tasklet
 
 ### 工作队列
