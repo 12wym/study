@@ -892,6 +892,8 @@ static struct softirq_action softirq_vec[NR_SOFTIRQS];
 ### tasklet
 
 ```bash
+tasklet 运行在中断上下文，不能睡眠、不能调用阻塞 API；
+因为软中断数量有限，使用tasklet代替。且接口更简单，锁保护要求低。
 tasklet是利用软中断实现的一种下半部机制。
 
 tasklet由两类软中断代表：HI_SOFTIRQ和TASKLET_SOFTIRQ
@@ -910,3 +912,6 @@ struct tasklet_struct {
 
 ### 工作队列
 
+```bash
+工作队列运行在进程上下文，可以睡眠、处理更耗时的逻辑；
+```
