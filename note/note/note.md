@@ -891,5 +891,9 @@ static struct softirq_action softirq_vec[NR_SOFTIRQS];
 
 ### tasklet
 
+```bash
+
+```
+
 ### 工作队列
 
