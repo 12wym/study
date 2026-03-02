@@ -861,7 +861,19 @@ X0~X30寄存器的值
 ### 软中断
 
 ```bash
-软中断是在编译期间静态分配的。softirq_action
+软中断是在编译期间静态分配的。softirq_action结构体
+
+定义在<linux/interrupt.h>
+struct softirq_action {
+	void (*action)(struct softirq_action *);
+}
+
+在kernel/softirq.c中定义了一个包含有32个该结构体的数组
+
+static struct softirq_action softirq_vec[NR_SOFTIRQS];
+
+每个被注册的软中断都占据该数组的一项，因此最多可能有32个软中断。这是一个定值，注册的软中断数目的最大值没法动态改变，目前版本的内核中，只用到了9个。
+
 ```
 
 ### tasklet
