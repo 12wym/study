@@ -922,3 +922,7 @@ struct tasklet_struct {
 
 工作队列通常可以用内核线程替换
 ```
+
+![[Pasted image 20260302222104.png]]
+
+![[Pasted image 20260302222315.png]]
