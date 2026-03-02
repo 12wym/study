@@ -862,6 +862,7 @@ X0~X30寄存器的值
 
 ```bash
 软中断是在编译期间静态分配的。softirq_action结构体
+软中断保留给系统中对时间要求最严格以及最重要的下半部使用，目前只有两个子系统(网络和SCSI)直接使用软中断
 
 定义在<linux/interrupt.h>
 struct softirq_action {
