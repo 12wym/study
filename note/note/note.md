@@ -893,7 +893,20 @@ static struct softirq_action softirq_vec[NR_SOFTIRQS];
 
 ```bash
 tasklet是利用软中断实现的一种下半部机制。
+
+tasklet由两类软中断代表：HI_SOFTIRQ和TASKLET_SOFTIRQ
+两者之间唯一的区别在于，HI_SOFTIRQ类型的软中断先于TASKLET_SOFTIRQ类型的软中断执行
+
+struct tasklet_struct {
+	struct tasklet_struct *next; /*链表中的下一个 tasklet */
+	unsigned long state;         /* tasklet的状态*/
+	atomic_t count;              /* 引用计数器*/
+	void (*func)(unsigned long); /* tasklet 处理函数 */
+	unsigned long data;          /*给tasklet处理函数的参数*/
+};
 ```
+
+![[Pasted image 20260302165704.png]]
 
 ### 工作队列
 
