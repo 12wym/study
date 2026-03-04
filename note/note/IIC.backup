@@ -28,19 +28,19 @@ I²C支持多主机操作。总线仲裁是为了解决多设备同时竞争中�
 标准模式：对电容容忍度最高，比较容易挂载十几个设备
 ```
 
-![](./assets/IIC/Pasted_image_20260228170139.png)
+![[Pasted image 20260228170139.png]]
 
-![](./assets/IIC/Pasted_image_20260228170148.png)
+![[Pasted image 20260228170148.png]]
 
-![](./assets/IIC/Pasted_image_20260228170648.png)
-![](./assets/IIC/Pasted_image_20260228170818.png)
-![](./assets/IIC/Pasted_image_20260228170843.png)
+![[Pasted image 20260228170648.png]]
+![[Pasted image 20260228170818.png]]
+![[Pasted image 20260228170843.png]]
 
-![](./assets/IIC/Pasted_image_20260228172631.png)
+![[Pasted image 20260228172631.png]]
 
 # 写操作
 
-![](./assets/IIC/Pasted_image_20260304194557.png)
+![[Pasted image 20260304194557.png]]
 # 写入单个字节
 
 ```bash
@@ -54,11 +54,11 @@ I²C支持多主机操作。总线仲裁是为了解决多设备同时竞争中�
 ```
 
 
-![](./assets/IIC/Pasted_image_20260304195154.png)
+![[Pasted image 20260304195154.png]]
 
 # 读操作
 
-![](./assets/IIC/Pasted_image_20260304194620.png)
+![[Pasted image 20260304194620.png]]
 # 读单个字节
 
 ```bash
@@ -71,4 +71,4 @@ I²C支持多主机操作。总线仲裁是为了解决多设备同时竞争中�
 开始信号 + 设备地址(7位)+写(1位) + 等待从机应答 + 数据地址(8位) + 等待从机应答 + 开始信号 + 设备地址(7位)+读(1位) + 等待从机应答 + 从机返回读取数据1(8位) + 主机(接收机)应答 + 从机返回读取数据_2(8位) + 主机(接收机)应答+ ... + 从机返回读取数据_N(8位) + 主机(接收机)不再应答 + 终止信号
 ```
 
-![](./assets/IIC/Pasted_image_20260304195212.png)
+![[Pasted image 20260304195212.png]]

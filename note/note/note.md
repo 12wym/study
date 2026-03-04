@@ -13,7 +13,7 @@ BSS段(.bss):存放未初始化或初始化为0的全局/静态变量，加载�
 堆(Heap)由程序员malloc/free、new/delete等动态分配和释放，适合存储生命周期不确定的大块数据。忘记释放会导致内存泄漏
 ```
 
-![[Pasted image 20260303100303.png]]
+![](./assets/note/Pasted_image_20260303100303.png)
 
 ## . ->操作符
 
@@ -666,18 +666,18 @@ AArch64执行状态支持31个64位的通用寄存器，分别是X0～X30 寄存
 在AArch64 状态下，使用X（如X0、X30 等）表示64 位通用寄存器。另外，还可以使用W 来表示低32 位的数据，如W0 表示X0 寄存器的低32 位数据，W1 表示X1 寄存器的低32位数据
 ```
 
-![[Pasted image 20260227131246.png]]
+![](./assets/note/Pasted_image_20260227131246.png)
 
 # PSTATE寄存器
 
-![[Pasted image 20260227131325.png]]
-![[Pasted image 20260227131333.png]]
+![](./assets/note/Pasted_image_20260227131325.png)
+![](./assets/note/Pasted_image_20260227131333.png)
 
 # 特殊寄存器
 
-![[Pasted image 20260227131352.png]]
+![](./assets/note/Pasted_image_20260227131352.png)
 
-![[Pasted image 20260301170520.png]]
+![](./assets/note/Pasted_image_20260301170520.png)
 
 # 异常处理
 
@@ -702,7 +702,7 @@ AArch64执行状态支持31个64位的通用寄存器，分别是X0～X30 寄存
 在ARM64处理器中，中断请求分为普通中断请求(IRQ)和快速中断请求(FIQ,优先级高)
 ```
 
-![[Pasted image 20260227121646.png]]
+![](./assets/note/Pasted_image_20260227121646.png)
 
 ## 中止
 
@@ -739,7 +739,7 @@ EL2用于运行虚拟化管理程序。
 EL3用于运行安全世界的管理程序。
 ```
 
-![[Pasted image 20260227123720.png]]
+![](./assets/note/Pasted_image_20260227123720.png)
 
 # 异常入口
 
@@ -753,11 +753,11 @@ EL3用于运行安全世界的管理程序。
 对于系统调用的同步异常，返回的是系统调用指令的下一条指令
 ```
 
-![[Pasted image 20260227145607.png]]
+![](./assets/note/Pasted_image_20260227145607.png)
 
 # 栈的选择
 
-![[Pasted image 20260227144720.png]]
+![](./assets/note/Pasted_image_20260227144720.png)
 
 ```bash
 异常发生时，如果 CPU 正在 EL0 中运行用户空间进程，突然触发了一个中断，CPU 就会跳转到 EL1 来处理这个中断，因此 CPU 会自动选择 SP_EL1 指向的栈空间。
@@ -780,7 +780,7 @@ HCR_EL2 寄存器中有一个 RW 域（Bit[31]），它记录了异常发生后 
 当异常处理结束之后，调用 ERET 指令返回时要不要切换执行模式呢？这里需要看 SPSR的相关记录。
 ```
 
-![[Pasted image 20260227151636.png]]
+![](./assets/note/Pasted_image_20260227151636.png)
 
 # 异常向量表
 
@@ -797,8 +797,8 @@ ARMv8 的异常向量表发生了变化，每一个表项是 128 字节，这样
 每个表项可以存放 32 条指令，一共 128 字节。
 ```
 
-![[Pasted image 20260227152428.png]]
-![[Pasted image 20260227152436.png]]
+![](./assets/note/Pasted_image_20260227152428.png)
+![](./assets/note/Pasted_image_20260227152436.png)
 
 # VBAR_ELx
 
@@ -806,7 +806,7 @@ ARMv8 的异常向量表发生了变化，每一个表项是 128 字节，这样
 ARMv8 体系结构提供了一个 VBAR_ELx 寄存器来设置异常向量表的地址。其中 Bit[63:11]存放异常向量表，而Bit[10:0]是保留的，异常向量表的基地址就需要与2 KB 地址对齐了。
 ```
 
-![[Pasted image 20260227172502.png]]
+![](./assets/note/Pasted_image_20260227172502.png)
 # 异常现场
 
 ```bash
@@ -827,7 +827,7 @@ X0~X30寄存器的值
 有一个与访问失效相关的寄存器——异常综合信息寄存器(Exception Syndrome Register,ESR)
 ```
 
-![[Pasted image 20260301165548.png]]
+![](./assets/note/Pasted_image_20260301165548.png)
 
 
 # 中断
@@ -859,7 +859,7 @@ X0~X30寄存器的值
 
 ## 工作推后执行机制
 
-![[Pasted image 20260302133832.png]]
+![](./assets/note/Pasted_image_20260302133832.png)
 
 ### 软中断
 
@@ -890,7 +890,7 @@ static struct softirq_action softirq_vec[NR_SOFTIRQS];
 不管是用什么办法唤起，软中断都要在do_softirq()中执行。
 ```
 
-![[Pasted image 20260302154958.png]]
+![](./assets/note/Pasted_image_20260302154958.png)
 
 ### tasklet
 
@@ -911,7 +911,7 @@ struct tasklet_struct {
 };
 ```
 
-![[Pasted image 20260302165704.png]]
+![](./assets/note/Pasted_image_20260302165704.png)
 
 ### 工作队列
 
@@ -926,9 +926,9 @@ struct tasklet_struct {
 工作队列通常可以用内核线程替换
 ```
 
-![[Pasted image 20260302222104.png]]
+![](./assets/note/Pasted_image_20260302222104.png)
 
-![[Pasted image 20260302222315.png]]
+![](./assets/note/Pasted_image_20260302222315.png)
 
 # 内存分配
 
